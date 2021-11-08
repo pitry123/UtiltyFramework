@@ -1,0 +1,311 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet xmlns="Concrete">
+  <xs:schema id="NewDataSet" targetNamespace="Concrete" xmlns:mstns="Concrete" xmlns="Concrete" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="input">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Function" type="xs:string" minOccurs="0" />
+                <xs:element name="Initial" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="output">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Function" type="xs:string" minOccurs="0" />
+                <xs:element name="Initial" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="result">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Function" type="xs:string" minOccurs="0" />
+                <xs:element name="Initial" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="enabled">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Function" type="xs:string" minOccurs="0" />
+                <xs:element name="Initial" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="_x003A__x003A_ProjectLogID">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_GreenRedTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_DynamicTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_outputEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesDB_x003A__x003A_RulesInputDBEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesDB_x003A__x003A_RulesExistenceDBEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_inputEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_MyEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <input>
+    <Field>iTestData</Field>
+    <Enumeration>ApplicationSampleDB::inputEnum</Enumeration>
+    <Function>GetInputTestData</Function>
+    <Initial>INTPUT1</Initial>
+  </input>
+  <input>
+    <Field>iOptions</Field>
+    <Enumeration>ApplicationSampleDB::MyEnum</Enumeration>
+    <Function>GetInputOptions</Function>
+    <Initial>OPTION1</Initial>
+  </input>
+  <output>
+    <Field>GreenRedTable/ROW_1.option</Field>
+    <Enumeration>ApplicationSampleDB::MyEnum</Enumeration>
+    <Function>Get(GreenRedTable/ROW_1.option)</Function>
+    <Initial>OPTION1</Initial>
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_1.option</Field>
+    <Enumeration>ApplicationSampleDB::MyEnum</Enumeration>
+    <Function>Get(GreenRedTable/ROW_1.option)</Function>
+    <Initial>OPTION1</Initial>
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_1.val1</Field>
+    <Enumeration>int</Enumeration>
+    <Function>Get(GreenRedTable/ROW_1.val1)</Function>
+    <Initial>2</Initial>
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_1.structData.oneMoreStruct.options</Field>
+    <Enumeration>ApplicationSampleDB::MyEnum</Enumeration>
+    <Function>Get(GreenRedTable/ROW_1.structData.oneMoreStruct.options)</Function>
+    <Initial>OPTION2</Initial>
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_2</Field>
+    <Enumeration>int</Enumeration>
+    <Function>Get(GreenRedTable/ROW_2)</Function>
+    <Initial>20</Initial>
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_5</Field>
+    <Enumeration>ApplicationSampleDB::MyEnum</Enumeration>
+    <Function>Get(GreenRedTable/ROW_5)</Function>
+    <Initial />
+  </output>
+  <output>
+    <Field>GreenRedTable/ROW_1.val1</Field>
+    <Enumeration>int</Enumeration>
+    <Function>Get(GreenRedTable/ROW_1.val1)</Function>
+    <Initial>2</Initial>
+  </output>
+  <result>
+    <Field>rRule1</Field>
+    <Enumeration>RulesExistence</Enumeration>
+    <Function>GetResRule1</Function>
+    <Initial>RULE_NOT_VALID</Initial>
+  </result>
+  <result>
+    <Field>rDynamic_Rule1</Field>
+    <Enumeration>RulesExistence</Enumeration>
+    <Function>GetResDynamic_Rule1</Function>
+    <Initial>RULE_NOT_VALID</Initial>
+  </result>
+  <result>
+    <Field>rDynamic_Rule2</Field>
+    <Enumeration>RulesExistence</Enumeration>
+    <Function>GetResDynamic_Rule2</Function>
+    <Initial>RULE_NOT_VALID</Initial>
+  </result>
+  <result>
+    <Field>rDynamic_Rule3</Field>
+    <Enumeration>RulesExistence</Enumeration>
+    <Function>GetResDynamic_Rule3</Function>
+    <Initial>RULE_NOT_VALID</Initial>
+  </result>
+  <result>
+    <Field>rDynamic_Rule4</Field>
+    <Enumeration>RulesExistence</Enumeration>
+    <Function>GetResDynamic_Rule4</Function>
+    <Initial>RULE_NOT_VALID</Initial>
+  </result>
+  <enabled>
+    <Field>enRule1</Field>
+    <Enumeration>RulesEnabled</Enumeration>
+    <Function>GetEnabledRule1</Function>
+    <Initial>RULE_ENABLE</Initial>
+  </enabled>
+  <enabled>
+    <Field>enDynamic_Rule1</Field>
+    <Enumeration>RulesEnabled</Enumeration>
+    <Function>GetEnabledDynamic_Rule1</Function>
+    <Initial>RULE_ENABLE</Initial>
+  </enabled>
+  <enabled>
+    <Field>enDynamic_Rule2</Field>
+    <Enumeration>RulesEnabled</Enumeration>
+    <Function>GetEnabledDynamic_Rule2</Function>
+    <Initial>RULE_ENABLE</Initial>
+  </enabled>
+  <enabled>
+    <Field>enDynamic_Rule3</Field>
+    <Enumeration>RulesEnabled</Enumeration>
+    <Function>GetEnabledDynamic_Rule3</Function>
+    <Initial>RULE_ENABLE</Initial>
+  </enabled>
+  <enabled>
+    <Field>enDynamic_Rule4</Field>
+    <Enumeration>RulesEnabled</Enumeration>
+    <Function>GetEnabledDynamic_Rule4</Function>
+    <Initial>RULE_ENABLE</Initial>
+  </enabled>
+  <_x003A__x003A_ProjectLogID>
+    <Value>NUM_OF_PROJECT_LOGS</Value>
+  </_x003A__x003A_ProjectLogID>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>ROW_1</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>ROW_2</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>ROW_3</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>ROW_4</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>ROW_5</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_GreenRedTable>
+    <Value>NUM_OF_GREEN_RED_TABLE_ROWS</Value>
+  </ApplicationSampleDB_x003A__x003A_GreenRedTable>
+  <ApplicationSampleDB_x003A__x003A_DynamicTable>
+    <Value>NUM_DYNAMIC_TABLE_ROWS</Value>
+  </ApplicationSampleDB_x003A__x003A_DynamicTable>
+  <ApplicationSampleDB_x003A__x003A_outputEnum>
+    <Value>OUTPUT1</Value>
+  </ApplicationSampleDB_x003A__x003A_outputEnum>
+  <ApplicationSampleDB_x003A__x003A_outputEnum>
+    <Value>OUTPUT2</Value>
+  </ApplicationSampleDB_x003A__x003A_outputEnum>
+  <ApplicationSampleDB_x003A__x003A_outputEnum>
+    <Value>OUTPUT3</Value>
+  </ApplicationSampleDB_x003A__x003A_outputEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>iStam</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>iActive</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>iTest</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>iTesNum</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>iMyData</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesInputDBEnum>
+    <Value>RULES_INPUT_DB_SIZE</Value>
+  </RulesDB_x003A__x003A_RulesInputDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rClassicRule</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rClassicRule2</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rClassicRule5</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rRule1</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rRule2</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rRule3</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>rRule4</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <RulesDB_x003A__x003A_RulesExistenceDBEnum>
+    <Value>RULES_EXISTENCE_DB_SIZE</Value>
+  </RulesDB_x003A__x003A_RulesExistenceDBEnum>
+  <ApplicationSampleDB_x003A__x003A_inputEnum>
+    <Value>INTPUT1</Value>
+  </ApplicationSampleDB_x003A__x003A_inputEnum>
+  <ApplicationSampleDB_x003A__x003A_inputEnum>
+    <Value>INTPUT2</Value>
+  </ApplicationSampleDB_x003A__x003A_inputEnum>
+  <ApplicationSampleDB_x003A__x003A_inputEnum>
+    <Value>INTPUT3</Value>
+  </ApplicationSampleDB_x003A__x003A_inputEnum>
+  <ApplicationSampleDB_x003A__x003A_MyEnum>
+    <Value>OPTION1</Value>
+  </ApplicationSampleDB_x003A__x003A_MyEnum>
+  <ApplicationSampleDB_x003A__x003A_MyEnum>
+    <Value>OPTION2</Value>
+  </ApplicationSampleDB_x003A__x003A_MyEnum>
+</NewDataSet>

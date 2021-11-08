@@ -1,0 +1,173 @@
+﻿<?xml version="1.0"?>
+<Rules>
+  <Version>1</Version>
+  <RulesManagerLocation>C:\Users\TC61671\source\repos\Infrastructure\Samples\DynamicApplication\Common\DynamicApplication</RulesManagerLocation>
+  <MonitorDataSetLocation>C:\Users\TC61671\source\repos\Infrastructure\Samples\DynamicApplication\DE\DynamicApplicationDataSet.xml</MonitorDataSetLocation>
+  <DbXmlLocation>C:\Users\TC61671\source\repos\Infrastructure\Samples\DynamicApplication\DE\DynamicApplicationRulesDB.xml</DbXmlLocation>
+  <TfsBatLocation>
+  </TfsBatLocation>
+  <IniLocation>C:\Users\TC61671\source\repos\Infrastructure\Samples\DynamicApplication</IniLocation>
+  <InputDataBase>RulesInputDBEnum</InputDataBase>
+  <OutputDataBase>RulesOutputDBEnum</OutputDataBase>
+  <RulesExistenceDataBase>RulesExistenceDBEnum</RulesExistenceDataBase>
+  <RulesEnabledDataBase>RulesEnabledDBEnum</RulesEnabledDataBase>
+  <Framework />
+  <EnumsHeaderFiles>
+    <HeaderFile>../DynamicApplication/Common/DynamicApplication/ApplicationSampleDB.h</HeaderFile>
+  </EnumsHeaderFiles>
+  <AlternativeEnumsHeaderFiles>
+    <HeaderFile>
+    </HeaderFile>
+  </AlternativeEnumsHeaderFiles>
+  <IncludeFilesInfo>
+    <UseAbsPath>False</UseAbsPath>
+    <AbsGenricFolderPath>Framework</AbsGenricFolderPath>
+    <RelGenricFolderPath>../../../../../../Framework</RelGenricFolderPath>
+  </IncludeFilesInfo>
+  <ExportSymbols>False</ExportSymbols>
+  <Namespaces>
+    <Namespace>Rules</Namespace>
+  </Namespaces>
+  <Category>
+    <Name>ClassicRule</Name>
+    <Rule>
+      <Name>Rule1</Name>
+      <Id>0</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Create a Regular rule that is like it always was</Comment>
+      <Expression>
+        <Condition>
+          <Function>GetInputOptions</Function>
+          <Operator>==</Operator>
+          <Enumeration>OPTION1</Enumeration>
+        </Condition>
+        <Middle_Operator>||</Middle_Operator>
+        <Condition>
+          <Function>GetInputTestData</Function>
+          <Operator>==</Operator>
+          <Enumeration>INTPUT2</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>iOptions</Trigger>
+        <Trigger>iTestData</Trigger>
+      </Triggers>
+      <True_Tasks />
+      <False_Tasks />
+    </Rule>
+  </Category>
+  <Category>
+    <Name>Dynamic Rules</Name>
+    <Rule>
+      <Name>Dynamic_Rule1</Name>
+      <Id>1</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Trigger by empty Row change value in specific value in the struct only if other fields in the struct meets condition</Comment>
+      <Expression>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_1.option)</Function>
+          <Operator>==</Operator>
+          <Enumeration>OPTION2</Enumeration>
+        </Condition>
+        <Middle_Operator>&amp;&amp;</Middle_Operator>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_1.val1)</Function>
+          <Operator>&gt;</Operator>
+          <Enumeration>5</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>GreenRedTable/ROW_1</Trigger>
+      </Triggers>
+      <True_Tasks>
+        <True_Task>
+          <True_Task_Field>GreenRedTable/ROW_1.structData.oneMoreStruct.options</True_Task_Field>
+          <True_Task_State>OPTION2</True_Task_State>
+          <True_Task_Notify>OnChange</True_Task_Notify>
+          <True_Task_TimeOut>0</True_Task_TimeOut>
+        </True_Task>
+      </True_Tasks>
+      <False_Tasks>
+        <False_Task>
+          <False_Task_Field>GreenRedTable/ROW_1.structData.oneMoreStruct.options</False_Task_Field>
+          <False_Task_State>OPTION1</False_Task_State>
+          <False_Task_Notify>OnChange</False_Task_Notify>
+          <False_Task_TimeOut>0</False_Task_TimeOut>
+        </False_Task>
+      </False_Tasks>
+    </Rule>
+    <Rule>
+      <Name>Dynamic_Rule2</Name>
+      <Id>2</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Trigger from ROW1 or ROW2 and check condtion of equality between ROW5 and ROW1 or ROW2 greater than 20</Comment>
+      <Expression>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_2)</Function>
+          <Operator>&gt;</Operator>
+          <Enumeration>20</Enumeration>
+        </Condition>
+        <Middle_Operator>||</Middle_Operator>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_5)</Function>
+          <Operator>==</Operator>
+          <Enumeration>Get(GreenRedTable/ROW_1.option)</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>GreenRedTable/ROW_2</Trigger>
+        <Trigger>GreenRedTable/ROW_1</Trigger>
+      </Triggers>
+      <True_Tasks />
+      <False_Tasks />
+    </Rule>
+    <Rule>
+      <Name>Dynamic_Rule3</Name>
+      <Id>3</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Check equality of two diffrent fields on the same ROW (ROW1)</Comment>
+      <Expression>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_1.option)</Function>
+          <Operator>==</Operator>
+          <Enumeration>Get(GreenRedTable/ROW_1.structData.oneMoreStruct.options)</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>GreenRedTable/ROW_1</Trigger>
+      </Triggers>
+      <True_Tasks />
+      <False_Tasks />
+    </Rule>
+    <Rule>
+      <Name>Dynamic_Rule4</Name>
+      <Id>4</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Combine Classic Rule with Dynamic Rule</Comment>
+      <Expression>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_1.option)</Function>
+          <Operator>==</Operator>
+          <Enumeration>GetInputOptions</Enumeration>
+        </Condition>
+        <Middle_Operator>&amp;&amp;</Middle_Operator>
+        <Condition>
+          <Function>Get(GreenRedTable/ROW_1.val1)</Function>
+          <Operator>==</Operator>
+          <Enumeration>5</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>iOptions</Trigger>
+        <Trigger>GreenRedTable/ROW_1</Trigger>
+      </Triggers>
+      <True_Tasks />
+      <False_Tasks />
+    </Rule>
+  </Category>
+</Rules>

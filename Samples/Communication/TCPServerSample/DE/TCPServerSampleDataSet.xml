@@ -1,0 +1,215 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="4">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ClientIncommingTable" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="CommIncomingDB" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="ClientComm">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ClientOutgoingTable" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="CommOutgoingDB" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="ClientComm">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ServersClientIncommingTable" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="CommIncomingDB" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="ServerComm">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ServersClientOutgoingTable" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="CommOutgoingDB" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="ServerComm">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="communication.h_x003A__x003A_communication_error">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="communication.h_x003A__x003A_communication_status">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_ActiveInactiveEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ClientIncommingTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ERROR_CODE</Field_Name>
+    <Enumeration>communication.h::communication_error</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ClientIncommingTable>
+  <ClientIncommingTable>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>COMM_STATUS</Field_Name>
+    <Enumeration>communication.h::communication_status</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ClientIncommingTable>
+  <ClientIncommingTable>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>INCOMING_MESSAGE</Field_Name>
+    <Type>charbuff[2048]</Type>
+    <Size>0</Size>
+  </ClientIncommingTable>
+  <ClientOutgoingTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>OUTGOINT_CONNECTION_CMD</Field_Name>
+    <Enumeration>CommonTypes::ActiveInactiveEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>Active or INACTIVE</Comment>
+    <Size>4</Size>
+  </ClientOutgoingTable>
+  <ClientOutgoingTable>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>OUTGOING_MESSAGE</Field_Name>
+    <Type>charbuff[2048]</Type>
+    <Size>0</Size>
+  </ClientOutgoingTable>
+  <ServersClientIncommingTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ERROR_CODE</Field_Name>
+    <Enumeration>communication.h::communication_error</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ServersClientIncommingTable>
+  <ServersClientIncommingTable>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>COMM_STATUS</Field_Name>
+    <Enumeration>communication.h::communication_status</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ServersClientIncommingTable>
+  <ServersClientIncommingTable>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>INCOMING_MESSAGE</Field_Name>
+    <Type>charbuff[2048]</Type>
+    <Size>0</Size>
+  </ServersClientIncommingTable>
+  <ServersClientOutgoingTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>OUTGOINT_CONNECTION_CMD</Field_Name>
+    <Enumeration>CommonTypes::ActiveInactiveEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>Active or INACTIVE</Comment>
+    <Size>4</Size>
+  </ServersClientOutgoingTable>
+  <ServersClientOutgoingTable>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>OUTGOING_MESSAGE</Field_Name>
+    <Type>charbuff[2048]</Type>
+    <Size>0</Size>
+  </ServersClientOutgoingTable>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>NO_ERRORS</Field>
+    <Value>0</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>NO_PERMISSION</Field>
+    <Value>1</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>ACCESS_DENIED</Field>
+    <Value>2</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>HOST_UNREACHABLE</Field>
+    <Value>3</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>TIMED_OUT</Field>
+    <Value>4</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>CONNECTION_REFUSED</Field>
+    <Value>5</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_error>
+    <Field>UNKNOWN_ERROR</Field>
+    <Value>6</Value>
+  </communication.h_x003A__x003A_communication_error>
+  <communication.h_x003A__x003A_communication_status>
+    <Field>DISCONNECTED</Field>
+    <Value>0</Value>
+  </communication.h_x003A__x003A_communication_status>
+  <communication.h_x003A__x003A_communication_status>
+    <Field>CONNECTED</Field>
+    <Value>1</Value>
+  </communication.h_x003A__x003A_communication_status>
+  <CommonTypes_x003A__x003A_ActiveInactiveEnum>
+    <Field>ACTIVE</Field>
+    <Value>0</Value>
+  </CommonTypes_x003A__x003A_ActiveInactiveEnum>
+  <CommonTypes_x003A__x003A_ActiveInactiveEnum>
+    <Field>INACTIVE</Field>
+    <Value>1</Value>
+  </CommonTypes_x003A__x003A_ActiveInactiveEnum>
+</NewDataSet>

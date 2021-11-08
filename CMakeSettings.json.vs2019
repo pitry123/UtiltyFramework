@@ -1,0 +1,92 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Visual Studio 16 2019 Win64",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\VSProject\\${name}",
+      "cmakeCommandArgs": "-DUSE_CONAN=ON",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [],
+      "variables": []
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Visual Studio 16 2019 Win64",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\VSProject\\${name}",
+      "cmakeCommandArgs": "-DUSE_CONAN=ON",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [],
+      "variables": []
+    },
+    {
+      "name": "x86-Debug",
+      "generator": "Visual Studio 16 2019",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\VSProject\\${name}",
+      "cmakeCommandArgs": "-DUSE_CONAN=ON",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [],
+      "variables": []
+    },
+    {
+      "name": "x86-Release",
+      "generator": "Visual Studio 16 2019",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\VSProject\\${name}",
+      "cmakeCommandArgs": "-DUSE_CONAN=ON",
+      "buildCommandArgs": "-m -v:minimal",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [],
+      "variables": []
+    },
+    {
+      "name": "linux-debug",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "configurationType": "Debug",
+      "remoteCMakeListsRoot": "/var/tmp/src/framework_2.0/infrastructure",
+      "cmakeExecutable": "/usr/bin/cmake",
+      "remoteBuildRoot": "/var/tmp/build/framework_2.0/infrastructure/${name}",
+      "remoteInstallRoot": "/usr",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [ "VSProject", "out", ".vs", ".git" ],
+      "rsyncCommandArgs": "-t --delete",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-j4",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "variables": []
+    },
+    {
+      "name": "linux-release",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "configurationType": "Release",
+      "remoteCMakeListsRoot": "/var/tmp/src/framework_2.0/infrastructure",
+      "cmakeExecutable": "/usr/bin/cmake",
+      "remoteBuildRoot": "/var/tmp/build/framework_2.0/infrastructure/${name}",
+      "remoteInstallRoot": "/usr",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [ "VSProject", "out", ".vs", ".git" ],
+      "rsyncCommandArgs": "-t --delete",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-j4",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "variables": []
+    }
+  ]
+}

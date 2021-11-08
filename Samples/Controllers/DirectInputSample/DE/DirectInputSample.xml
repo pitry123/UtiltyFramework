@@ -1,0 +1,29 @@
+<Configuration>
+  <Project.Name>DirectInputSample</Project.Name>
+  <Project.Folder>C:\Development\Framework_2.0\Infrastructure\Samples\Controllers\DirectInputSample\DE</Project.Folder>
+  <Project.Logger>C:\Development\Framework_2.0\Infrastructure\Samples\Controllers\DirectInputSample\DE\LoggerSettings.xml</Project.Logger>
+  <Project.Common>C:\Development\Framework_2.0\Infrastructure\Samples\Controllers\DirectInputSample\Tables.h</Project.Common>
+  <Project.GenericCommon>C:\Development\Framework_2.0\Infrastructure\Samples\Controllers\DirectInputSample\DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>C:\Development\Framework_2.0\Infrastructure\Common\Controllers\</Folder.0>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>4321</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>1234</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>False</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

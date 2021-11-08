@@ -1,0 +1,34 @@
+<Configuration>
+  <Project.Name>RemoteAgentPublisher</Project.Name>
+  <Project.Folder>J:\LandSystems\Framework_2.0\Infrastructure\Samples\RemoteAgentSample\RemoteAgentPublisher\DE</Project.Folder>
+  <Project.Logger>J:\LandSystems\Framework_2.0\Infrastructure\Samples\RemoteAgentSample\RemoteAgentPublisher\DE\LoggerSettings.xml</Project.Logger>
+  <Project.Common>J:\LandSystems\Framework_2.0\Infrastructure\Samples\RemoteAgentSample\Common\RemoteAgentSample\ProjectCommon.h</Project.Common>
+  <Project.GenericCommon>J:\LandSystems\Framework_2.0\Infrastructure\Samples\RemoteAgentSample\RemoteAgentPublisher\DE\DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>J:\LandSystems\Framework_2.0\Infrastructure\include\core</Folder.0>
+    <Folder.1>J:\LandSystems\Framework_2.0\Infrastructure\ModernAPI</Folder.1>
+    <Folder.2>J:\LandSystems\Framework_2.0\Packages\Modules</Folder.2>
+    <Folder.3>J:\LandSystems\Framework_2.0\Infrastructure\Common</Folder.3>
+    <Folder.4>J:\LandSystems\Framework_2.0\Packages\Include\utils</Folder.4>
+    <Folder.5>J:\LandSystems\Framework_2.0\Infrastructure\Samples\RemoteAgentSample\Common\</Folder.5>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>7654</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>4567</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>True</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

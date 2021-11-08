@@ -1,0 +1,151 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="2">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="JoystickStatusTable" msdata:Reference_Table="JoystickStatusDBEnum" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="JoystickSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="JoystickCommandsTable" msdata:Reference_Table="JoystickCommandsDBEnum" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="JoystickSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="JoystickDefs_x003A__x003A_JoystickInfo" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="JoystickDefs_x003A__x003A_JoystickVibration" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <JoystickStatusTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>JOYSTICK_INFO</Field_Name>
+    <Type>JoystickDefs::JoystickInfo</Type>
+    <Size>0</Size>
+  </JoystickStatusTable>
+  <JoystickCommandsTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>JOYSTICK_VIBRATION</Field_Name>
+    <Type>JoystickDefs::JoystickVibration</Type>
+    <Size>0</Size>
+  </JoystickCommandsTable>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>leftAnalogX</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>leftAnalogY</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>rightAnalogX</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>rightAnalogY</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>zAxis</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>5</Field_x0020_Id>
+    <Field_Name>pointOfView</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>6</Field_x0020_Id>
+    <Field_Name>leftTrigger</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>7</Field_x0020_Id>
+    <Field_Name>rightTrigger</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>8</Field_x0020_Id>
+    <Field_Name>buttons</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickInfo>
+    <Field_x0020_Id>9</Field_x0020_Id>
+    <Field_Name>pushedButtonsCount</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </JoystickDefs_x003A__x003A_JoystickInfo>
+  <JoystickDefs_x003A__x003A_JoystickVibration>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>leftMotor</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickVibration>
+  <JoystickDefs_x003A__x003A_JoystickVibration>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>rightMotor</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </JoystickDefs_x003A__x003A_JoystickVibration>
+</NewDataSet>

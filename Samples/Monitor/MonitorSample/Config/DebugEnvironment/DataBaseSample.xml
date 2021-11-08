@@ -1,0 +1,22 @@
+<Configuration>
+  <Project.Name>DataBaseSample</Project.Name>
+  <Project.Folder>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Monitor\MonitorSample\Config\DebugEnvironment</Project.Folder>
+  <Project.Logger>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Monitor\MonitorSample\Config\DebugEnvironment\LoggerSettings.xml</Project.Logger>
+  <Project.Common>J:\LandSystems\MasterTrunk\Framework_2.0\Infrastructure\Samples\Monitor\MonitorSample\Tables.h</Project.Common>
+  <Project.GenericCommon>J:\LandSystems\MasterTrunk\Framework_2.0\Infrastructure\Samples\Monitor\MonitorSample\DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>J:\LandSystems\MasterTrunk\Framework_2.0\Infrastructure\Samples\Monitor\MonitorSample</Folder.0>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>4321</Listen.Port>
+    <!--Transmit.Ip>127.0.0.1</Transmit.Ip-->
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>1234</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>False</State.Machines>
+  <Activities>UserDefined</Activities>
+</Configuration>

@@ -1,0 +1,32 @@
+<Configuration>
+  <Project.Name>TCPServerSample</Project.Name>
+  <Project.Folder>C:\Development\Framework_2.0\Infrastructure\Samples\Communication\TCPServerSample\DE</Project.Folder>
+  <Project.Logger>LoggerSettings.xml</Project.Logger>
+  <Project.Common>Tables.h</Project.Common>
+  <Project.GenericCommon>DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>c:\Development\Framework_2.0\Infrastructure\Samples\Communication\TCPServerSample\Common\TCPServerSample</Folder.0>
+    <Folder.1>C:\Development\Framework_2.0\Infrastructure\Include</Folder.1>
+    <Folder.2>C:\Development\Framework_2.0\Infrastructure\ModernAPI</Folder.2>
+    <Folder.3>C:\Development\Framework_2.0\Infrastructure\Common</Folder.3>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>1234</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>4321</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>False</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

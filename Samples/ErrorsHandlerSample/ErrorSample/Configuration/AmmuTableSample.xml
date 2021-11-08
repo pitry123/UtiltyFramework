@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="DOS-862" standalone="no"?>
+<DATABASE name="AmmunitionDataDBEnum">
+  <DBENTRY name="AMMU_PARAMETERS">
+    <STRUCT>
+      <INT name="weapon">0</INT>
+      <FLOAT name="battleRange">725</FLOAT>
+      <FLOAT name="muzzleVelocity_speed21">1070</FLOAT>
+      <STRING name="ammoName" size="50">TP</STRING>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_POWDER_TEMP_COEFICIENTS">
+    <STRUCT>
+      <FLOAT name="Tpa">1073.6</FLOAT>
+      <FLOAT name="Tpb">0.3637</FLOAT>
+      <FLOAT name="Tpc">0.0012</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_GUN_WEAR_COEFICIENTS">
+    <STRUCT>
+      <FLOAT name="gw_a0">1070</FLOAT>
+      <FLOAT name="gw_a1">0</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_CORIOLIS_EFFECT">
+    <STRUCT>
+      <INT name="coriolisEffectValueType">1</INT>
+      <FLOAT name="constantCoriolisEffectValue">25.4</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_DISPLAY_NAMES">
+    <STRUCT>
+      <STRING name="englishAmmoFullName" size="50">TP</STRING>
+      <STRING name="englishAmmoShortName" size="20">TP</STRING>
+      <STRING name="hebrewAmmoFullName" size="50">TP</STRING>
+      <STRING name="hebrewAmmoShortName" size="20">TP</STRING>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_DATA_UPDATES">
+    <STRUCT>
+      <STRING name="ballisticsTableUpdate" size="50">NONE</STRING>
+      <STRING name="xmlFileUpdate" size="50">NONE</STRING>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_INFORMATION">
+    <STRUCT>
+      <FLOAT name="startRange">0</FLOAT>
+      <FLOAT name="maxRange">3000</FLOAT>
+      <FLOAT name="resolution">100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <PROTOTYPE name="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">0</FLOAT>
+      <FLOAT name="Peps">0</FLOAT>
+      <FLOAT name="Tf">0</FLOAT>
+      <FLOAT name="Pv">0</FLOAT>
+      <FLOAT name="Pt">0</FLOAT>
+      <FLOAT name="Pp">0</FLOAT>
+      <FLOAT name="Pdrift">0</FLOAT>
+      <FLOAT name="TC">0</FLOAT>
+      <FLOAT name="TcMuzVel">0</FLOAT>
+      <FLOAT name="TcAirTemp">0</FLOAT>
+      <FLOAT name="TcAirPress">0</FLOAT>
+    </STRUCT>
+  </PROTOTYPE>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_0" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT />
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_1" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">100</FLOAT>
+      <FLOAT name="Peps">0.45</FLOAT>
+      <FLOAT name="Tf">0.095</FLOAT>
+      <FLOAT name="Pv">2.222</FLOAT>
+      <FLOAT name="Pdrift">0.01</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_2" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">200</FLOAT>
+      <FLOAT name="Peps">0.91</FLOAT>
+      <FLOAT name="Tf">0.192</FLOAT>
+      <FLOAT name="Pv">4.348</FLOAT>
+      <FLOAT name="Pp">-0.195</FLOAT>
+      <FLOAT name="Pdrift">0.03</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_3" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">300</FLOAT>
+      <FLOAT name="Peps">1.38</FLOAT>
+      <FLOAT name="Tf">0.291</FLOAT>
+      <FLOAT name="Pv">4.255</FLOAT>
+      <FLOAT name="Pp">-0.19</FLOAT>
+      <FLOAT name="Pdrift">0.05</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_4" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">400</FLOAT>
+      <FLOAT name="Peps">1.87</FLOAT>
+      <FLOAT name="Tf">0.394</FLOAT>
+      <FLOAT name="Pv">6.122</FLOAT>
+      <FLOAT name="Pt">0.1</FLOAT>
+      <FLOAT name="Pp">-0.183</FLOAT>
+      <FLOAT name="Pdrift">0.06</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_5" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">500</FLOAT>
+      <FLOAT name="Peps">2.38</FLOAT>
+      <FLOAT name="Tf">0.499</FLOAT>
+      <FLOAT name="Pv">7.843</FLOAT>
+      <FLOAT name="Pt">0.377</FLOAT>
+      <FLOAT name="Pp">-0.351</FLOAT>
+      <FLOAT name="Pdrift">0.08</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_6" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">600</FLOAT>
+      <FLOAT name="Peps">2.91</FLOAT>
+      <FLOAT name="Tf">0.607</FLOAT>
+      <FLOAT name="Pv">9.434</FLOAT>
+      <FLOAT name="Pt">0.362</FLOAT>
+      <FLOAT name="Pp">-0.506</FLOAT>
+      <FLOAT name="Pdrift">0.1</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_7" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">700</FLOAT>
+      <FLOAT name="Peps">3.46</FLOAT>
+      <FLOAT name="Tf">0.717</FLOAT>
+      <FLOAT name="Pv">12.727</FLOAT>
+      <FLOAT name="Pt">0.699</FLOAT>
+      <FLOAT name="Pp">-0.813</FLOAT>
+      <FLOAT name="Pdrift">0.12</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_8" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">800</FLOAT>
+      <FLOAT name="Peps">4.03</FLOAT>
+      <FLOAT name="Tf">0.831</FLOAT>
+      <FLOAT name="Pv">14.035</FLOAT>
+      <FLOAT name="Pt">1.011</FLOAT>
+      <FLOAT name="Pp">-1.099</FLOAT>
+      <FLOAT name="Pdrift">0.13</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_9" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">900</FLOAT>
+      <FLOAT name="Peps">4.62</FLOAT>
+      <FLOAT name="Tf">0.949</FLOAT>
+      <FLOAT name="Pv">15.254</FLOAT>
+      <FLOAT name="Pt">0.977</FLOAT>
+      <FLOAT name="Pp">-1.365</FLOAT>
+      <FLOAT name="Pdrift">0.16</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_10" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1000</FLOAT>
+      <FLOAT name="Peps">5.23</FLOAT>
+      <FLOAT name="Tf">1.069</FLOAT>
+      <FLOAT name="Pv">16.393</FLOAT>
+      <FLOAT name="Pt">1.26</FLOAT>
+      <FLOAT name="Pp">-1.613</FLOAT>
+      <FLOAT name="Pdrift">0.18</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_11" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1100</FLOAT>
+      <FLOAT name="Peps">5.87</FLOAT>
+      <FLOAT name="Tf">1.194</FLOAT>
+      <FLOAT name="Pv">18.75</FLOAT>
+      <FLOAT name="Pt">1.501</FLOAT>
+      <FLOAT name="Pp">-1.957</FLOAT>
+      <FLOAT name="Pdrift">0.2</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_12" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1200</FLOAT>
+      <FLOAT name="Peps">6.53</FLOAT>
+      <FLOAT name="Tf">1.322</FLOAT>
+      <FLOAT name="Pv">19.697</FLOAT>
+      <FLOAT name="Pt">1.746</FLOAT>
+      <FLOAT name="Pp">-2.305</FLOAT>
+      <FLOAT name="Pdrift">0.22</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_13" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1300</FLOAT>
+      <FLOAT name="Peps">7.22</FLOAT>
+      <FLOAT name="Tf">1.454</FLOAT>
+      <FLOAT name="Pv">20.29</FLOAT>
+      <FLOAT name="Pt">1.949</FLOAT>
+      <FLOAT name="Pp">-2.723</FLOAT>
+      <FLOAT name="Pdrift">0.25</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_14" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1400</FLOAT>
+      <FLOAT name="Peps">7.94</FLOAT>
+      <FLOAT name="Tf">1.59</FLOAT>
+      <FLOAT name="Pv">20.833</FLOAT>
+      <FLOAT name="Pt">2.135</FLOAT>
+      <FLOAT name="Pp">-3.107</FLOAT>
+      <FLOAT name="Pdrift">0.27</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_15" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1500</FLOAT>
+      <FLOAT name="Peps">8.7</FLOAT>
+      <FLOAT name="Tf">1.73</FLOAT>
+      <FLOAT name="Pv">23.684</FLOAT>
+      <FLOAT name="Pt">2.528</FLOAT>
+      <FLOAT name="Pp">-3.49</FLOAT>
+      <FLOAT name="Pdrift">0.3</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_16" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1600</FLOAT>
+      <FLOAT name="Peps">9.48</FLOAT>
+      <FLOAT name="Tf">1.875</FLOAT>
+      <FLOAT name="Pv">24.359</FLOAT>
+      <FLOAT name="Pt">2.956</FLOAT>
+      <FLOAT name="Pp">-4.129</FLOAT>
+      <FLOAT name="Pdrift">0.33</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_17" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1700</FLOAT>
+      <FLOAT name="Peps">10.3</FLOAT>
+      <FLOAT name="Tf">2.025</FLOAT>
+      <FLOAT name="Pv">25.61</FLOAT>
+      <FLOAT name="Pt">3.28</FLOAT>
+      <FLOAT name="Pp">-4.583</FLOAT>
+      <FLOAT name="Pdrift">0.35</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_18" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1800</FLOAT>
+      <FLOAT name="Peps">11.16</FLOAT>
+      <FLOAT name="Tf">2.18</FLOAT>
+      <FLOAT name="Pv">26.744</FLOAT>
+      <FLOAT name="Pt">3.797</FLOAT>
+      <FLOAT name="Pp">-5.202</FLOAT>
+      <FLOAT name="Pdrift">0.38</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_19" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">1900</FLOAT>
+      <FLOAT name="Peps">12.05</FLOAT>
+      <FLOAT name="Tf">2.34</FLOAT>
+      <FLOAT name="Pv">26.966</FLOAT>
+      <FLOAT name="Pt">4.101</FLOAT>
+      <FLOAT name="Pp">-5.73</FLOAT>
+      <FLOAT name="Pdrift">0.42</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_20" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2000</FLOAT>
+      <FLOAT name="Peps">12.99</FLOAT>
+      <FLOAT name="Tf">2.505</FLOAT>
+      <FLOAT name="Pv">28.723</FLOAT>
+      <FLOAT name="Pt">4.496</FLOAT>
+      <FLOAT name="Pp">-6.282</FLOAT>
+      <FLOAT name="Pdrift">0.45</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_21" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2100</FLOAT>
+      <FLOAT name="Peps">13.98</FLOAT>
+      <FLOAT name="Tf">2.676</FLOAT>
+      <FLOAT name="Pv">30.303</FLOAT>
+      <FLOAT name="Pt">5.045</FLOAT>
+      <FLOAT name="Pp">-6.959</FLOAT>
+      <FLOAT name="Pdrift">0.49</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_22" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2200</FLOAT>
+      <FLOAT name="Peps">15.01</FLOAT>
+      <FLOAT name="Tf">2.854</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.52</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_23" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2300</FLOAT>
+      <FLOAT name="Peps">16.14</FLOAT>
+      <FLOAT name="Tf">3.04</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.63</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_24" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2400</FLOAT>
+      <FLOAT name="Peps">17.28</FLOAT>
+      <FLOAT name="Tf">3.23</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.67</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_25" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2500</FLOAT>
+      <FLOAT name="Peps">18.46</FLOAT>
+      <FLOAT name="Tf">3.42</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.72</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_26" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2600</FLOAT>
+      <FLOAT name="Peps">19.72</FLOAT>
+      <FLOAT name="Tf">3.63</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.77</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_27" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2700</FLOAT>
+      <FLOAT name="Peps">21.03</FLOAT>
+      <FLOAT name="Tf">3.84</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.82</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_28" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2800</FLOAT>
+      <FLOAT name="Peps">22.42</FLOAT>
+      <FLOAT name="Tf">4.06</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.88</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_29" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">2900</FLOAT>
+      <FLOAT name="Peps">23.88</FLOAT>
+      <FLOAT name="Tf">4.28</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">0.94</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_30" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3000</FLOAT>
+      <FLOAT name="Peps">25.42</FLOAT>
+      <FLOAT name="Tf">4.52</FLOAT>
+      <FLOAT name="Pv">31.068</FLOAT>
+      <FLOAT name="Pt">5.409</FLOAT>
+      <FLOAT name="Pp">-7.644</FLOAT>
+      <FLOAT name="Pdrift">1</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_31" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_32" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_33" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_34" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_35" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_36" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_37" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_38" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_39" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">3900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_40" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_41" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_42" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_43" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_44" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_45" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_46" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_47" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_48" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_49" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">4900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_50" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_51" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_52" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_53" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_54" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_55" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_56" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_57" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_58" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_59" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">5900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_60" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_61" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_62" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_63" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_64" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_65" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_66" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_67" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_68" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_69" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">6900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_70" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_71" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_72" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_73" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_74" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_75" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_76" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_77" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_78" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_79" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">7900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_80" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_81" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_82" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_83" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_84" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_85" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_86" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_87" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_88" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_89" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">8900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_90" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_91" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_92" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_93" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_94" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_95" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_96" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_97" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_98" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_99" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">9900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_100" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_101" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_102" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_103" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_104" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_105" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_106" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_107" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_108" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_109" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">10900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_110" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_111" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_112" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_113" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_114" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_115" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_116" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_117" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_118" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_119" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">11900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_120" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_121" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_122" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_123" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_124" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_125" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_126" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_127" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_128" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_129" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">12900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_130" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_131" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_132" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_133" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_134" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_135" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_136" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_137" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_138" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_139" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">13900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_140" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_141" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_142" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_143" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_144" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_145" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_146" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_147" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_148" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_149" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">14900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_150" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_151" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_152" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_153" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_154" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_155" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_156" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_157" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_158" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_159" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">15900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_160" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_161" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_162" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_163" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_164" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_165" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_166" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_167" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_168" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_169" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">16900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_170" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_171" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_172" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_173" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_174" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_175" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_176" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_177" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_178" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_179" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">17900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_180" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_181" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_182" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_183" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_184" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_185" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_186" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_187" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_188" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_189" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">18900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_190" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_191" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19100</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_192" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19200</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_193" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19300</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_194" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19400</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_195" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19500</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_196" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19600</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_197" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19700</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_198" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19800</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_199" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">19900</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMU_BALLISTICS_TABLE_DATA_RANGE_200" prototype="AmmuBallisticsTableDataPrototype">
+    <STRUCT>
+      <FLOAT name="range">20000</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+</DATABASE>

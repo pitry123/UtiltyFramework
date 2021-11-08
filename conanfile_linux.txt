@@ -1,0 +1,7 @@
+[options]
+
+[requires]
+Boost/1.64.0@Framework2/Dependencies
+
+[generators]
+cmake

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ERROR_STORE>
+  <ErrorGroupsDB name="ErrorGroupsDB">
+    <ErrorGroup type="int" id="0">ErrorGroupsList</ErrorGroup>
+    <ErrorGroup type="int" id="1">GRP_XXX_XXX</ErrorGroup>
+    <ErrorGroup type="int" id="2">GRP_No_Motion</ErrorGroup>
+  </ErrorGroupsDB>
+  <DATABASE name="ErrorStoreDBEnum" errorsDB="ErrorDBEnum">
+    <PROTOTYPE name="ErrorDataStructPrototype">
+      <STRUCT name="ErrorStoreStruct">
+        <INT32 name="FaultCode">0</INT32>
+        <STRING name="ReportingEquipDescription" size="16">Unit1</STRING>
+        <STRING name="ReportingModuleDescription" size ="16">Module1</STRING>
+        <STRING name="Description" size ="256">Fault Description</STRING>
+        <SHORT name="RepeatsToSet">0</SHORT>
+        <uint64_t name="DelayToSet">0</uint64_t>
+      </STRUCT>
+    </PROTOTYPE>
+    <DBENTRY name="RTW FAIL" prototype="ErrorStoreStruct">
+      <STRUCT name="ErrorStoreStruct" />
+      <INT32 name="FaultCode">1</INT32>
+      <STRING name="ReportingEquipDescription">EMU</STRING>
+      <STRING name="ReportingModuleDescription">RTW</STRING>
+      <STRING name="Description">RTW FAIL</STRING>
+      <SHORT name="RepeatsToSet">0</SHORT>
+      <uint64_t name="DelayToSet">0</uint64_t>
+    </DBENTRY>
+    <DBENTRY name="BSP FAIL" prototype="ErrorStoreStruct">
+      <STRUCT name="ErrorStoreStruct" />
+      <INT32 name="FaultCode">2</INT32>
+      <STRING name="ReportingEquipDescription">EMU</STRING>
+      <STRING name="ReportingModuleDescription">BSP</STRING>
+      <STRING name="Description">BSP FAIL</STRING>
+      <SHORT name="RepeatsToSet">2</SHORT>
+      <uint64_t name="DelayToSet">3000</uint64_t>
+    </DBENTRY>
+    <DBENTRY name="BSP FAIL 2" prototype="ErrorStoreStruct">
+      <STRUCT name="ErrorStoreStruct" />
+      <INT32 name="FaultCode">3</INT32>
+      <STRING name="ReportingEquipDescription">EMU</STRING>
+      <STRING name="ReportingModuleDescription">BSP</STRING>
+      <STRING name="Description">BSP FAIL 2</STRING>
+      <SHORT name="RepeatsToSet">2</SHORT>
+      <uint64_t name="DelayToSet">2000</uint64_t>
+    </DBENTRY>
+  </DATABASE>
+  <ErrorsMetadata>
+    <Error name="RTW FAIL">
+      <Triggers type="Trigger">
+        <Trigger>
+          <Dataset>dr2</Dataset>
+          <DataTable>InternalErrorsDB</DataTable>
+          <DataRow>ERROR1</DataRow>
+        </Trigger>
+      </Triggers>
+      <ErrorGroups>
+        <ErrorGroup>GRP_XXX_XXX</ErrorGroup>
+      </ErrorGroups>
+    </Error>
+    <Error name="BSP FAIL">
+      <Triggers type="Trigger">
+        <Trigger>
+          <Dataset>dr2</Dataset>
+          <DataTable>InternalErrorsDB</DataTable>
+          <DataRow>CC_ROM_ERROR</DataRow>
+        </Trigger>
+      </Triggers>
+      <ErrorGroups>
+        <ErrorGroup>GRP_No_Motion</ErrorGroup>
+      </ErrorGroups>
+    </Error>
+    <Error name="BSP FAIL 2">
+      <Triggers type="Trigger">
+        <Trigger>
+          <Dataset>dr2</Dataset>
+          <DataTable>InternalErrorsDB</DataTable>
+          <DataRow>ERROR3</DataRow>
+        </Trigger>
+      </Triggers>
+      <ErrorGroups>
+        <ErrorGroup>GRP_XXX_XXX</ErrorGroup>
+        <ErrorGroup>GRP_No_Motion</ErrorGroup>
+      </ErrorGroups>
+    </Error>
+  </ErrorsMetadata>
+</ERROR_STORE>

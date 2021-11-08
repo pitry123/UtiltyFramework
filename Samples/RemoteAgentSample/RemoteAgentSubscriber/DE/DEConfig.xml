@@ -1,0 +1,10 @@
+<Configuration>
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

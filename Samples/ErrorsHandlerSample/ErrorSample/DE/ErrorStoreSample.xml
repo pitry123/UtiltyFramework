@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ERRORS>
+<ErrorGroupsDB name="ErrorGroupDB">
+    <ErrorGroup id="0" type="int">GENERAL ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="1" type="int">FATAL ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="2" type="int">GUN FIRE DISABLE ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="3" type="int">MAG FIRE DISABLE ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="4" type="int">OPTICS ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="5" type="int">TCEU ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="6" type="int">TOU ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="7" type="int">EMU ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="8" type="int">EDSS ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="9" type="int">GCU ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="10" type="int">TCEU ERROR GROUP</ErrorGroup>
+    <ErrorGroup id="11" type="int">TCEU ERROR GROUP</ErrorGroup>
+
+    <!-- Error Groups:                         -->
+    <!-- =============                         -->
+    <!-- 0 -  GENERAL ERROR GROUP (ALL ERRORS) -->
+    <!-- 1 -  FATAL ERROR GROUP                -->
+    <!-- 2 -  GUN FIRE DISABLE ERROR GROUP     -->
+    <!-- 3 -  MAG FIRE DISABLE ERROR GROUP     -->
+    <!-- 4 -  OPTICS ERROR GROUP               -->
+    <!-- 5 -  TCEU ERROR GROUP                 -->
+    <!-- 6 -  TOU ERROR GROUP                  -->
+    <!-- 7 -  EMU ERROR GROUP                  -->
+    <!-- 8 -  EDSS ERROR GROUP                 -->
+    <!-- 9 -  GCU ERROR GROUP                  -->
+    <!-- 10 - GNNR POD ERROR GROUP             -->
+    <!-- 11 - FIRE ERROR GROUP                 -->
+    <!-- 12 - MAG SAFETY CATCH ERROR GROUP     -->
+    <!-- 13 - DEGRADATION TO STG ERROR GROUP   -->
+    <!-- 14 - CMDR COAPS ERROR GROUP           -->
+    <!-- 15 - GNNR COAPS ERROR GROUP           -->
+    <!-- 16 - HIDDEN ERRORS GROUP		           -->
+    <!-- 17 - LWS ERRORS GROUP		             -->
+    <!-- 18 - GNNR PALM ERRORS GROUP	         -->
+    <!-- 19 - CMDR PALM ERRORS GROUP	         -->
+    <!-- 20 - MISSILE ARM ERRORS GROUP	       -->
+    <!-- ===================================================================================== -->
+    <!-- ===================================================================================== -->
+  </ErrorGroupsDB>
+<DATABASE name="ErrorStoreDBEnum" errorsDB="ErrorDBEnum">
+  <PROTOTYPE name="EdssErrorPrototype">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">0</SHORT>
+      <STRING name="pchUnitDescription" size="16">EDSS_ERR</STRING>
+      <STRING name="pchErrorDescription" size="50">0</STRING>
+      <STRING name="pchLogFile" size="50">/ErrorLog/EdssErr.csv</STRING>
+      <SHORT name="nShortMessageIndex">2</SHORT>
+      <SHORT name="nLongMessageIndex">15</SHORT>
+      <STRUCT name="ErrorIndicationCounterStruct">
+        <SHORT name="nCounterForExist">1</SHORT>
+        <SHORT name="nIncPerExistIndication">1</SHORT>
+        <SHORT name="nDecPerExistIndication">1</SHORT>
+      </STRUCT>
+      <uint64_t name="nStartupTime">0</uint64_t>
+      <STRING name="pchGroups" size="256">0,8</STRING>
+    </STRUCT>
+  </PROTOTYPE>
+
+  <DBENTRY name="DPR_CHECKSUM_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">1</SHORT>
+      <STRING name="pchErrorDescription" size="50">DPR CHECKSUM</STRING>
+      <SHORT name="nLongMessageIndex">18</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="CC_ROM_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">2</SHORT>
+      <STRING name="pchErrorDescription" size="50">CC ROM</STRING>
+      <SHORT name="nLongMessageIndex">19</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="CC_RAM_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">3</SHORT>
+      <STRING name="pchErrorDescription" size="50">CC RAM</STRING>
+      <SHORT name="nLongMessageIndex">20</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="CAPACITORS_VOLT_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">4</SHORT>
+      <STRING name="pchErrorDescription" size="50">CAPACITORS VOLT</STRING>
+      <SHORT name="nLongMessageIndex">21</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="PLAT_TEMP_CTRL_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">5</SHORT>
+      <STRING name="pchErrorDescription" size="50">PLAT TEMP CTRL</STRING>
+      <SHORT name="nLongMessageIndex">22</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="TRV_TRIP_PHASE_A_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">6</SHORT>
+      <STRING name="pchErrorDescription" size="50">TRV TRP PHASE A</STRING>
+      <SHORT name="nLongMessageIndex">23</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="TRV_TRIP_PHASE_C_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">7</SHORT>
+      <STRING name="pchErrorDescription" size="50">TRV TRP PHASE C</STRING>
+      <SHORT name="nLongMessageIndex">24</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="ELV_TRIP_PHASE_A_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">8</SHORT>
+      <STRING name="pchErrorDescription" size="50">ELV TRP PHASE A</STRING>
+      <SHORT name="nLongMessageIndex">25</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="ELV_TRIP_PHASE_C_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">9</SHORT>
+      <STRING name="pchErrorDescription" size="50">ELV TRP PHASE C</STRING>
+      <SHORT name="nLongMessageIndex">26</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="TRV_HW_PHASE_A_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">10</SHORT>
+      <STRING name="pchErrorDescription" size="50">TRV HW PHASE A</STRING>
+      <SHORT name="nLongMessageIndex">27</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="TRV_HW_PHASE_B_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">11</SHORT>
+      <STRING name="pchErrorDescription" size="50">TRV HW PHASE B</STRING>
+      <SHORT name="nLongMessageIndex">28</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="TRV_HW_PHASE_C_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">12</SHORT>
+      <STRING name="pchErrorDescription" size="50">TRV HW PHASE C</STRING>
+      <SHORT name="nLongMessageIndex">29</SHORT> 
+       <STRING name="pchGroups" size="256">0,1,8</STRING>
+   </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="ELV_HW_PHASE_A_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">13</SHORT>
+      <STRING name="pchErrorDescription" size="50">ELV HW PHASE A</STRING>
+      <SHORT name="nLongMessageIndex">30</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="ELV_HW_PHASE_B_ERROR" prototype="ErrorStoreStruct">
+    <STRUCT name="ErrorStoreStruct">
+      <SHORT name="nIdentifier">14</SHORT>
+      <STRING name="pchErrorDescription" size="50">ELV HW PHASE B</STRING>
+      <SHORT name="nLongMessageIndex">31</SHORT>
+      <STRING name="pchGroups" size="256">0,1,8</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  
+    
+</DATABASE>
+<ACTIONS>
+  <Error name="DPR_CHECKSUM_ERROR">
+    <Triggers type="rules">
+      <Rule>
+      <Name>DPR_CHECKSUM_ERROR_RULE</Name>
+      <Id>0</Id>
+      <Form>Regular</Form>
+      <TreeName>None</TreeName>
+      <Comment>Test</Comment>
+      <Expression>
+        <Condition>
+          <Function>GetInputCurrentWorkMode</Function>
+          <Operator>!=</Operator>
+          <Enumeration>MODE_MANUAL</Enumeration>
+        </Condition>
+        <Middle_Operator>&amp;&amp;</Middle_Operator>
+        <Condition>
+          <Function>GetInputMastOpened</Function>
+          <Operator>==</Operator>
+          <Enumeration>BOOL_TRUE</Enumeration>
+        </Condition>
+        <Middle_Operator>&amp;&amp;</Middle_Operator>
+        <Middle_Operator>(</Middle_Operator>
+        <Condition>
+          <Function>GetInputHandleAnalogsElvAboveThreshold</Function>
+          <Operator>==</Operator>
+          <Enumeration>BOOL_TRUE</Enumeration>
+        </Condition>
+        <Middle_Operator>||</Middle_Operator>
+        <Condition>
+          <Function>GetInputHandleAnalogsTrvAboveThreshold</Function>
+          <Operator>==</Operator>
+          <Enumeration>BOOL_TRUE</Enumeration>
+        </Condition>
+        <Middle_Operator>)</Middle_Operator>
+        <Middle_Operator>&amp;&amp;</Middle_Operator>
+        <Condition>
+          <Function>GetOutputCurrentMaster</Function>
+          <Operator>==</Operator>
+          <Enumeration>USER_GUNNER</Enumeration>
+        </Condition>
+      </Expression>
+      <Triggers>
+        <Trigger>ERROR1@ErrorsDB</Trigger>
+      </Triggers>
+      <True_Tasks/>
+      <False_Tasks />
+    </Rule>
+     </Triggers>
+      <ErrorGroups>
+        <ErrorGroup>GENERAL ERROR GROUP</ErrorGroup>
+        <ErrorGroup>FATAL ERROR GROUP</ErrorGroup>
+        <ErrorGroup>GUN FIRE DISABLE ERROR GROUP</ErrorGroup>
+      </ErrorGroups>
+   </Error>
+   <Error name="CC_ROM_ERROR">
+     <Triggers type="Trigger">
+       <Trigger>CC_ROM_ERROR@InternalErrorsDB</Trigger>
+     </Triggers>
+     <ErrorGroups>
+       <ErrorGroup>GENERAL ERROR GROUP</ErrorGroup>
+       <ErrorGroup>FATAL ERROR GROUP</ErrorGroup>
+       <ErrorGroup>GUN FIRE DISABLE ERROR GROUP</ErrorGroup>
+     </ErrorGroups>
+   </Error>
+</ACTIONS>
+</ERRORS>

@@ -1,0 +1,34 @@
+<Configuration>
+  <Project.Name>ErrorSample</Project.Name>
+  <Project.Folder>
+  </Project.Folder>
+  <Project.Logger>LoggerSettings.xml</Project.Logger>
+  <Project.Common>ProjectCommon.h</Project.Common>
+  <Project.GenericCommon>DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>${Project.Folder}/../Common/ErrorSample</Folder.0>
+    <Folder.1>${Project.Folder}/../../../../Common</Folder.1>
+    <Folder.2>${Project.Folder}/../../../../ModernAPI</Folder.2>
+    <Folder.3>${Project.Folder}/../../../../Include</Folder.3>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Ip>127.0.0.1</Listen.Ip>
+    <Listen.Port>23103</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>23102</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>False</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

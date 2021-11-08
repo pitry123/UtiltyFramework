@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<debugEnv index="0" type="STRUCT">
+		<remoteAddress index="0" type="STRING" size="16">127.0.0.1</remoteAddress>
+		<remotePort index="1" type="UINT16_T" >23104</remotePort>
+		<localAddress index="2" type="STRING" size="16">127.0.0.1</localAddress>
+		<localPort index="3" type="UINT16_T" >23105</localPort>
+	</debugEnv>
+ </root>

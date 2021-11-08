@@ -1,0 +1,8 @@
+EXPORTS
+	gst_shm_sink_get_caps
+	gst_shm_sink_get_emit_signals
+	gst_shm_sink_get_type
+	gst_shm_sink_is_eos
+	gst_shm_sink_set_callbacks
+	gst_shm_sink_set_caps
+	gst_shm_sink_set_emit_signals

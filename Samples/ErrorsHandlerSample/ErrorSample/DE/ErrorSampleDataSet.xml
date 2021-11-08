@@ -1,0 +1,458 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="11">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="InternalErrorsDB" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="DeviceX">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ErrorInfoDB" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="ErrorMetadata" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Errors__metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ErrorGroupsDB" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Errors">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ErrorStoreDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Errors">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ErrorDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Errors">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesInputDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Rules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesOutputDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Rules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesExistenceDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Rules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesEnabledDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Rules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RulesManagementDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="Rules">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="XML_StoreDBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="ParamStore">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_ErrorStatusStruct" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_ErrorGroupStruct" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_MonitorParams" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_CounterStruct" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+                <xs:element name="count" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_StatusEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_ErrorStatusEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <InternalErrorsDB>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ERROR1</Field_Name>
+    <Enumeration>CommonTypes::StatusEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>Row 1 of the tester</Comment>
+    <Size>4</Size>
+    <defaultvalue>STATUS_NONE</defaultvalue>
+  </InternalErrorsDB>
+  <InternalErrorsDB>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>CC_ROM_ERROR</Field_Name>
+    <Enumeration>CommonTypes::StatusEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>Row 2 of the tester</Comment>
+    <Size>4</Size>
+    <defaultvalue>STATUS_NONE</defaultvalue>
+  </InternalErrorsDB>
+  <InternalErrorsDB>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>ERROR3</Field_Name>
+    <Enumeration>CommonTypes::StatusEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+    <defaultvalue>STATUS_NONE</defaultvalue>
+  </InternalErrorsDB>
+  <ErrorInfoDB>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ErrorStatus</Field_Name>
+    <Type>CommonTypes::ErrorStatusStruct</Type>
+    <Size>0</Size>
+  </ErrorInfoDB>
+  <ErrorInfoDB>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>ErrorGroups</Field_Name>
+    <Type>CommonTypes::ErrorGroupStruct</Type>
+    <Size>0</Size>
+  </ErrorInfoDB>
+  <XML_StoreDBEnum>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>DEBUG_ENV</Field_Name>
+    <Type>CommonTypes::MonitorParams</Type>
+    <Size>0</Size>
+  </XML_StoreDBEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusStruct>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>status</Field_Name>
+    <Enumeration>CommonTypes::ErrorStatusEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+    <defaultvalue>NOT_EXIST</defaultvalue>
+  </CommonTypes_x003A__x003A_ErrorStatusStruct>
+  <CommonTypes_x003A__x003A_ErrorStatusStruct>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>timeStamp</Field_Name>
+    <Type>int64_t</Type>
+    <Size>8</Size>
+  </CommonTypes_x003A__x003A_ErrorStatusStruct>
+  <CommonTypes_x003A__x003A_ErrorStatusStruct>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>pendable</Field_Name>
+    <Enumeration />
+    <Type>int</Type>
+    <Size>4</Size>
+  </CommonTypes_x003A__x003A_ErrorStatusStruct>
+  <CommonTypes_x003A__x003A_ErrorStatusStruct>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>errorKey</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </CommonTypes_x003A__x003A_ErrorStatusStruct>
+  <CommonTypes_x003A__x003A_ErrorStatusStruct>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>statistics</Field_Name>
+    <Type>CommonTypes::CounterStruct</Type>
+    <Size>0</Size>
+  </CommonTypes_x003A__x003A_ErrorStatusStruct>
+  <CommonTypes_x003A__x003A_ErrorGroupStruct>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>numOfExistingErrors</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </CommonTypes_x003A__x003A_ErrorGroupStruct>
+  <CommonTypes_x003A__x003A_ErrorGroupStruct>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>lastError</Field_Name>
+    <Type>char</Type>
+    <Size>256</Size>
+  </CommonTypes_x003A__x003A_ErrorGroupStruct>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>remoteAddress</Field_Name>
+    <Type>char</Type>
+    <Size>16</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>remotePort</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>localAddress</Field_Name>
+    <Type>char</Type>
+    <Size>16</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>localPort</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_CounterStruct>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>currentCount</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </CommonTypes_x003A__x003A_CounterStruct>
+  <CommonTypes_x003A__x003A_CounterStruct>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>Valid</Field_Name>
+    <Type>bool</Type>
+    <Size>1</Size>
+  </CommonTypes_x003A__x003A_CounterStruct>
+  <CommonTypes_x003A__x003A_StatusEnum>
+    <Field>STATUS_NONE</Field>
+    <Value>-1</Value>
+  </CommonTypes_x003A__x003A_StatusEnum>
+  <CommonTypes_x003A__x003A_StatusEnum>
+    <Field>STATUS_FAIL</Field>
+    <Value>0</Value>
+  </CommonTypes_x003A__x003A_StatusEnum>
+  <CommonTypes_x003A__x003A_StatusEnum>
+    <Field>STATUS_OK</Field>
+    <Value>1</Value>
+  </CommonTypes_x003A__x003A_StatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>NOT_EXIST</Field>
+    <Value>0x01</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>EXIST</Field>
+    <Value>0x02</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>PEND_TO_EXIST</Field>
+    <Value>0x04</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>VANISHED</Field>
+    <Value>0x08</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>REPEATED</Field>
+    <Value>0x10</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+  <CommonTypes_x003A__x003A_ErrorStatusEnum>
+    <Field>PEND_TO_REPEAT</Field>
+    <Value>0x20</Value>
+  </CommonTypes_x003A__x003A_ErrorStatusEnum>
+</NewDataSet>

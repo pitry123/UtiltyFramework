@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DATABASE name="CommDefStoreDBEnum">
+  <PROTOTYPE name="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">0</INT>
+      <STRING name="PortSet" size="64">0</STRING>
+      <INT name="ProtocolType">0</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">0</STRING>
+      <INT name="MaxStackSize">16000</INT>
+    </STRUCT>
+  </PROTOTYPE>
+
+  <DBENTRY name="MONITORING_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">4444,192.168.1.5:4444,0</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">MoniComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="EDSS_TCP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">1</INT>
+      <STRING name="PortSet" size="64">6000</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">EdssTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="EDSS_UDP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">9</INT>
+      <STRING name="PortSet" size="64">234.5.6.8:4568,192.168.1.4,255.255.255.0,234.5.6.7:4567</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">EdssUDP</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GNNR_VIDEO_PUBLISHER_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">0</INT>
+      <STRING name="PortSet" size="64">192.168.1.15:9999,200</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">GnnrPublisherTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="CMDR_VIDEO_PUBLISHER_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">0</INT>
+      <STRING name="PortSet" size="64">192.168.1.25:9999,200</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">CmdrPublisherTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GNNR_YATUSH_SERVICE_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">9512,192.168.1.15:9512,0</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">YatushGnnrService</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="CMDR_YATUSH_SERVICE_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">9513,192.168.1.25:9513,0</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">YatushCmdrService</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="LRF_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS422_J5_RX66_76_TX51_67, 19200, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">LrfComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GNNR_DAY_CAM_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS422_J5_RX79_77_TX53_52, 9600, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">GSonyComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GNNR_NIGHT_CAM_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS422_J5_RX64_74_TX65_75, 115200, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">GIvryComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="BORESIGHT_UNIT_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS485_J7_H54_L55, 9600, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">BSUnitComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GCU_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">4</INT>
+      <STRING name="PortSet" size="64">/RS485_J7_H35_L36, 9600, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">GcuComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="EMU_REMOTE_AGENT_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">2223,192.168.1.1:2223,0</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">EmuRemAgentComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="GNNR_COAPS_TCP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">1</INT>
+      <STRING name="PortSet" size="64">2010</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">3,0</STRING>
+      <STRING name="TaskName" size="64">GCoapsTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="GNNR_COAPS_UDP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">3010,192.168.1.20:3010</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">3,0</STRING>
+      <STRING name="TaskName" size="64">GCoapsUDP</STRING>
+    </STRUCT>
+  </DBENTRY>
+    
+  <DBENTRY name="CMDR_COAPS_TCP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">1</INT>
+      <STRING name="PortSet" size="64">2000</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">3,0</STRING>
+      <STRING name="TaskName" size="64">CCoapsTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="CMDR_COAPS_UDP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">3000,192.168.1.10:3000</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">3,0</STRING>
+      <STRING name="TaskName" size="64">CCoapsUDP</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="OPL_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">0</INT>
+      <STRING name="PortSet" size="64">192.168.1.12:5022,200</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">2,0</STRING>
+      <STRING name="TaskName" size="64">OPLComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="BMS_TCP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT type="STRUCT">
+      <INT name="PortType">1</INT>
+      <STRING name="PortSet" size="50">4100</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="30">0,0</STRING>
+      <STRING name="TaskName" size="30">BmsTcpComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="BMS_UDP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT type="STRUCT">
+      <INT name="PortType">9</INT>
+      <STRING name="PortSet" size="64">235.6.7.8:5678,192.168.1.4,255.255.0.0,235.6.7.9:5679</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="30">0,0</STRING>
+      <STRING name="TaskName" size="30">BmsUdpComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="MSM_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT type="STRUCT">
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS422_J4_RX60_70_TX62_61,9600,2,8,1,2,1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="30">0,0</STRING>
+      <STRING name="TaskName" size="30">MsmComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="TOU_REMOTE_AGENT_COM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">2227,192.168.1.6:2227,0</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">TouRemAgentComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="GNNR_UI_REMOTE_AGENT_COM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">2215,192.168.1.15:2215,0</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">GnnrUIRemAgentComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="CMDR_UI_REMOTE_AGENT_COM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">6</INT>
+      <STRING name="PortSet" size="64">2225,192.168.1.25:2225,0</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0</STRING>
+      <STRING name="TaskName" size="64">CmdrUIRemAgentComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  
+  <DBENTRY name="LWS_TCP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">1</INT>
+      <STRING name="PortSet" size="64">2100</STRING>
+      <INT name="ProtocolType">3</INT>
+      <STRING name="ProtocolSet" size="64">3,0</STRING>
+      <STRING name="TaskName" size="64">LwsTCP</STRING>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="MCLU_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">3</INT>
+      <STRING name="PortSet" size="64">/RS422_J7_RX10_11_TX8_9, 115200, 0, 8, 1, 2, 1</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64"></STRING>
+      <STRING name="TaskName" size="64">McluComm</STRING>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="IRON_VISION_UDP_COMM_DEFS" prototype="CommunicationEntryProt">
+    <STRUCT>
+      <INT name="PortType">9</INT>
+      <STRING name="PortSet" size="64">224.0.0.50:5535,192.168.1.4,255.255.0.0,224.0.0.50:5540</STRING>
+      <INT name="ProtocolType">5</INT>
+      <STRING name="ProtocolSet" size="64">0,0</STRING>
+      <STRING name="TaskName" size="64">IronVisionUDP</STRING>
+    </STRUCT>
+  </DBENTRY>
+</DATABASE>
+

@@ -1,0 +1,13 @@
+[options]
+GLFW3:shared=False
+
+[requires]
+GLFW3/3.2.1@Framework2/Dependencies
+GStreamer/1.18.0@Framework2/Dependencies
+Boost/1.64.0@Framework2/Dependencies
+OpenCV/3.4.5@Framework2/Dependencies
+LZ4/1.8.3@Framework2/Dependencies
+curl/7.66.0@Framework2/Dependencies
+
+[generators]
+cmake

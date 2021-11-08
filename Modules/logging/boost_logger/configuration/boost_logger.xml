@@ -1,0 +1,36 @@
+<BoostLogger class_id="0" tracking_level="0" version="0">
+	<FileName>Framework_2.0_%Y-%m-%d_%H-%M-%S.%N.log</FileName>
+	<RotationSize>10</RotationSize>
+	<TimeRotation class_id="1" tracking_level="0" version="0">
+		<Enabled>0</Enabled>
+		<Hour>0</Hour>
+		<Minute>0</Minute>
+		<Second>0</Second>
+	</TimeRotation>
+	<MinFreeSpace>30</MinFreeSpace>
+	<Enabled>1</Enabled>
+	<Filter>0</Filter>
+	<Console>0</Console>
+	<SysLog class_id="2" tracking_level="0" version="0">
+		<Enabled>0</Enabled>
+		<LocalAddress>0.0.0.0</LocalAddress>
+		<TargetAddress>127.0.0.1</TargetAddress>
+		<TargetPort>12555</TargetPort>
+	</SysLog>
+</BoostLogger>
+
+<!-- 
+This comment is not inside the XML since boost's serialization library does not handle XML comments.
+
+Fields overview:
+FileName: The log file name. Note that Date/Time formatting is supported
+RotationSize: Maximum size of log file before starting cyclic override (MegaBytes)
+TimeRotation: Switch to a new log file on a specific time of day. Enabled: 0=false, 1=true Hour:[0,23] Minute:[0,59] Second:[0,59]
+MinFreeSpace: The minimum available disk space required for the logger to operate (Megabytes)
+Enabled: Use to enable/disable logging. 0=false, 1=true
+Filter: This is the base filter for all logger instances. Set this to 0 in order to allow the loggers to have full control of the severity
+		Options are: 0=TRACE, 1=DEBUG, 2=INFO, 3=WARNING, 4=ERROR, 5=FATAL
+Console: Output logs to console/terminal. 0=false, 1=true
+SysLog: Enable/Disable and configure the syslog protocol UDP transmitting sink
+-->
+

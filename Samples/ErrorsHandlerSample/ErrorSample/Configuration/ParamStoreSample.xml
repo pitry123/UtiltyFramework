@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DATABASE name="ParamStoreDBEnum">
+    <DBENTRY name="REMOTE_AGENT_EXPORT_DB_TIMEOUT">
+        <INT>100</INT>
+    </DBENTRY>
+    <!-- Commutation Params -->
+    <DBENTRY name="POD_ELV_COMMUTATION_PARAMS">
+        <STRUCT name="CommutationParamsStruct">
+            <INT name="nSeElectricCalibValue">0</INT>
+            <INT name="nElmoSelectedPoleValue">128</INT>
+            <BOOL name="bElmoStepperModeReversed">1</BOOL>
+        </STRUCT>
+    </DBENTRY>
+    <DBENTRY name="POD_TRV_COMMUTATION_PARAMS">
+        <STRUCT name="CommutationParamsStruct">
+            <INT name="nSeElectricCalibValue">0</INT>
+            <INT name="nElmoSelectedPoleValue">128</INT>
+            <BOOL name="bElmoStepperModeReversed">1</BOOL>
+        </STRUCT>
+    </DBENTRY>
+    <!-- MAG Params Params -->
+    <DBENTRY name="MAG_AMMU_MUZZLE_TIME_MS">
+        <INT>70</INT>
+    </DBENTRY>
+    <DBENTRY name="MAG_BURST_LENGTH_ROUNDS">
+        <INT>5</INT>
+    </DBENTRY>
+    <DBENTRY name="MAG_FULL_LENGTH_ROUNDS">
+        <INT>50</INT>
+    </DBENTRY>
+    <DBENTRY name="MAG_RECHARGE_PARAMS">
+        <STRUCT name="MagRechargeParamsStruct">
+            <FLOAT name="fCurrent">7.0</FLOAT>
+            <FLOAT name="fLength_mm">650</FLOAT>
+        </STRUCT>
+    </DBENTRY>
+    <DBENTRY name="MAG_RECHARGE_FAILURES_MAX_COUNTER">
+        <INT>5</INT>
+    </DBENTRY>
+    <DBENTRY name="MAG_RECHARGE_TIMING_PARAMS">
+        <STRUCT name="MagRechargeTimingParamsStruct">
+            <INT name="nSafetyCatchTimeout">200</INT>
+            <INT name="nStartAtHomeTimeout">1000</INT>
+            <INT name="nReverseStartAtHomeTimeout">1000</INT>
+            <INT name="nMoveOutTimeout">3000</INT>
+            <INT name="nReturnHomeTimeout">3000</INT>
+            <INT name="nDropArmTimeout">100</INT>
+        </STRUCT>
+    </DBENTRY>
+    <DBENTRY name="MAG_SAFETY_CATCH_CHECK_DELAY">
+        <INT>200</INT>
+    </DBENTRY>
+    <!-- Gunner POD Reference Camera (usually LRF)    -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_GREF">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">-0.70858</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">-0.8758</FLOAT>
+                <FLOAT weapon="1">-0.6148</FLOAT>
+                <FLOAT weapon="2">0.1417</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">0.63683</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">0.0658</FLOAT>
+                <FLOAT weapon="1">0.0658</FLOAT>
+                <FLOAT weapon="2">0.0658</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">0.09085</FLOAT>
+                <FLOAT weapon="1">0.09085</FLOAT>
+                <FLOAT weapon="2">0.09085</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Gunner POD Day Camera                        -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_GDAY">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">-0.70858</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">-0.8758</FLOAT>
+                <FLOAT weapon="1">-0.6148</FLOAT>
+                <FLOAT weapon="2">0.1417</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">0.63683</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">-0.0531</FLOAT>
+                <FLOAT weapon="1">-0.0531</FLOAT>
+                <FLOAT weapon="2">-0.0531</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">0.00130</FLOAT>
+                <FLOAT weapon="1">0.00130</FLOAT>
+                <FLOAT weapon="2">0.00130</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Gunner POD Thermal Camera                    -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_GNIGHT">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">-0.70858</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">-0.8758</FLOAT>
+                <FLOAT weapon="1">-0.6148</FLOAT>
+                <FLOAT weapon="2">0.1417</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">0.0</FLOAT>
+                <FLOAT weapon="1">0.0</FLOAT>
+                <FLOAT weapon="2">0.63683</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">-0.0570</FLOAT>
+                <FLOAT weapon="1">-0.0570</FLOAT>
+                <FLOAT weapon="2">-0.0570</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">0.1385</FLOAT>
+                <FLOAT weapon="1">0.1385</FLOAT>
+                <FLOAT weapon="2">0.1385</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Commander POD Reference Camera (usually LRF) -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_CREF">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.58265</FLOAT>
+                <FLOAT weapon="1">0.52461</FLOAT>
+                <FLOAT weapon="2">-0.12593</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">0.71905</FLOAT>
+                <FLOAT weapon="1">0.98005</FLOAT>
+                <FLOAT weapon="2">1.73655</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">-0.28062</FLOAT>
+                <FLOAT weapon="1">-0.28062</FLOAT>
+                <FLOAT weapon="2">0.35621</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">0.14995</FLOAT>
+                <FLOAT weapon="1">0.14995</FLOAT>
+                <FLOAT weapon="2">0.14995</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">0.02048</FLOAT>
+                <FLOAT weapon="1">0.02048</FLOAT>
+                <FLOAT weapon="2">0.02048</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Commander POD Day Camera                     -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_CDAY">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.58265</FLOAT>
+                <FLOAT weapon="1">0.52461</FLOAT>
+                <FLOAT weapon="2">-0.12593</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">0.71905</FLOAT>
+                <FLOAT weapon="1">0.98005</FLOAT>
+                <FLOAT weapon="2">1.73655</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">-0.28062</FLOAT>
+                <FLOAT weapon="1">-0.28062</FLOAT>
+                <FLOAT weapon="2">0.35621</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">-0.09230</FLOAT>
+                <FLOAT weapon="1">-0.09230</FLOAT>
+                <FLOAT weapon="2">-0.09230</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">-0.02552</FLOAT>
+                <FLOAT weapon="1">-0.02552</FLOAT>
+                <FLOAT weapon="2">-0.02552</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Commander POD Thermal Camera                 -->
+    <!-- Parallax: ELV is Bz, TRV is By and DPT is Bx -->
+    <DBENTRY name="WEAPON_PARALAX_CNIGHT">
+        <STRUCT>
+            <ARRAY name="fElvParallaxValue">
+                <FLOAT weapon="0">0.58265</FLOAT>
+                <FLOAT weapon="1">0.52461</FLOAT>
+                <FLOAT weapon="2">-0.12593</FLOAT>
+            </ARRAY>
+            <ARRAY name="fTrvParallaxValue">
+                <FLOAT weapon="0">0.71905</FLOAT>
+                <FLOAT weapon="1">0.98005</FLOAT>
+                <FLOAT weapon="2">1.73655</FLOAT>
+            </ARRAY>
+            <ARRAY name="fDptParallaxValue">
+                <FLOAT weapon="0">-0.28062</FLOAT>
+                <FLOAT weapon="1">-0.28062</FLOAT>
+                <FLOAT weapon="2">0.35621</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdTrvParallaxValue">
+                <FLOAT weapon="0">-0.0962</FLOAT>
+                <FLOAT weapon="1">-0.0962</FLOAT>
+                <FLOAT weapon="2">-0.0962</FLOAT>
+            </ARRAY>
+            <ARRAY name="fLdElvParallaxValue">
+                <FLOAT weapon="0">0.100</FLOAT>
+                <FLOAT weapon="1">0.100</FLOAT>
+                <FLOAT weapon="2">0.100</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <DBENTRY name="GNNR_SIGHT_TRUNION_AXIS">
+        <BOOL>1</BOOL>
+    </DBENTRY>
+    <DBENTRY name="CMDR_SIGHT_TRUNION_AXIS">
+        <BOOL>0</BOOL>
+    </DBENTRY>
+    <DBENTRY name="USE_VEHICLE_VELOCITY">
+        <BOOL>0</BOOL>
+    </DBENTRY>
+    <!-- Enslavement (Loop) Error Params -->
+    <DBENTRY name="LOOP_ERROR_PARAMS">
+        <STRUCT>
+            <ARRAY name="nTimeoutForErrorMilli">
+                <INT Level="0">7500</INT>
+                <INT Level="1">1000</INT>
+                <INT Level="2">1000</INT>
+            </ARRAY>
+            <ARRAY name="fValueforErrorRadTrv">
+                <FLOAT Level="0">0.001</FLOAT>
+                <FLOAT Level="1">0.002</FLOAT>
+                <FLOAT Level="2">0.009</FLOAT>
+            </ARRAY>
+            <ARRAY name="fValueforErrorRadElv">
+                <FLOAT Level="0">0.001</FLOAT>
+                <FLOAT Level="1">0.002</FLOAT>
+                <FLOAT Level="2">0.009</FLOAT>
+            </ARRAY>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Calibrations Params -->
+    <DBENTRY name="ANGLE_SNS_GUN_HULL_ANGLE_THRESHOLD">
+        <FLOAT>2</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="ANGLE_SNS_BIAS_VALUE_THRESHOLD">
+        <FLOAT>2.5</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="GUN_UPPER_LIMIT_MAX_THRESHOLD">
+        <FLOAT>55</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="GUN_UPPER_LIMIT_MIN_THRESHOLD">
+        <FLOAT>70</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="GUN_LOWER_LIMIT_MAX_THRESHOLD">
+        <FLOAT>-20</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="GUN_LOWER_LIMIT_MIN_THRESHOLD">
+        <FLOAT>-5</FLOAT>
+    </DBENTRY>
+    <!-- Set of factors we need to use in order to maipulate FOV angle values.   -->
+    <!-- These factors are used due to image manipulation done in ATT that moves -->
+    <!-- and distort the image                                                   -->
+    <DBENTRY name="GNNR_FOV_ANGLE_FACTORS">
+        <STRUCT>
+            <STRUCT name="stDayImageFactors">
+                <FLOAT name="HFOV Factor">1</FLOAT>
+                <FLOAT name="VFOV Factor">1</FLOAT>
+            </STRUCT>
+            <STRUCT name="stNightImageFactors">
+                <FLOAT name="HFOV Factor">1.12</FLOAT>
+                <FLOAT name="VFOV Factor">1.05</FLOAT>
+            </STRUCT>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Factor due to black frame surrounding the image -->
+    <DBENTRY name="GNNR_NIGHT_BLACK_FRAME_FACTOR">
+        <FLOAT>1</FLOAT>
+    </DBENTRY>
+    <!-- Set of factors we need to use in order to maipulate FOV angle values.   -->
+    <!-- These factors are used due to image manipulation done in ATT that moves -->
+    <!-- and distort the image                                                   -->
+    <DBENTRY name="CMDR_FOV_ANGLE_FACTORS">
+        <STRUCT>
+            <STRUCT name="stDayImageFactors">
+                <FLOAT name="HFOV Factor">1</FLOAT>
+                <FLOAT name="VFOV Factor">1</FLOAT>
+            </STRUCT>
+            <STRUCT name="stNightImageFactors">
+                <FLOAT name="HFOV Factor">1.12</FLOAT>
+                <FLOAT name="VFOV Factor">1.05</FLOAT>
+            </STRUCT>
+        </STRUCT>
+    </DBENTRY>
+    <!-- Factor due to black frame surrounding the image -->
+    <DBENTRY name="CMDR_NIGHT_BLACK_FRAME_FACTOR">
+        <FLOAT>1</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="ATT_SINGLE_FIRE_IND_TIME_BIAS">
+        <INT>300</INT>
+    </DBENTRY>
+    <DBENTRY name="ATT_BURST_FIRE_IND_TIME_BIAS">
+        <INT>300</INT>
+    </DBENTRY>
+    <DBENTRY name="THREAT_LIFETIME_IN_MILLISECONDS">
+        <INT>120000</INT>
+    </DBENTRY>
+    <!-- Threat angle offset in degrees (0-360).                      -->
+    <!--Positive offset - clockwise, Negative for counter clockwise  -->
+    <DBENTRY name="THREAT_ANGLE_OFFSET_IN_DEGS">
+        <INT>-90</INT>
+    </DBENTRY>
+    <DBENTRY name="LPZ_MAX_ROLL_ANGLE_DEG_DEFAULT">
+        <INT>15</INT>
+    </DBENTRY>
+    <DBENTRY name="LPZ_MIN_ROLL_ANGLE_DEG_DEFAULT">
+        <INT>-15</INT>
+    </DBENTRY>
+    <DBENTRY name="MLP_SUPER_ELV_ANGLE_IN_DEGS">
+        <FLOAT>10.5</FLOAT>
+    </DBENTRY>
+    <DBENTRY name="TURRET_FAN_TIME">
+        <INT>60000</INT>
+    </DBENTRY>
+  <!-- Limit Joystick Values -->
+  <DBENTRY name="GNNR_JOYSTICK_VALUES_LIMITS">
+    <STRUCT name="JoystickValuesStruct">
+      <FLOAT name="fZero">0.0</FLOAT>
+      <FLOAT name="fLeft">-10.0</FLOAT>
+      <FLOAT name="fRight">10.0</FLOAT>
+      <FLOAT name="fUp">10.0</FLOAT>
+      <FLOAT name="fDown">-10.0</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="CMDR_JOYSTICK_VALUES_LIMITS">
+    <STRUCT name="JoystickValuesStruct">
+      <FLOAT name="fZero">0.0</FLOAT>
+      <FLOAT name="fLeft">10</FLOAT>
+      <FLOAT name="fRight">-10.0</FLOAT>
+      <FLOAT name="fUp">-10.0</FLOAT>
+      <FLOAT name="fDown">10.0</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="SPIKE_JOYSTICK_VALUES_LIMITS">
+    <STRUCT name="JoystickValuesStruct">
+      <FLOAT name="fZero">0.0</FLOAT>
+      <FLOAT name="fLeft">10</FLOAT>
+      <FLOAT name="fRight">-10.0</FLOAT>
+      <FLOAT name="fUp">-10.0</FLOAT>
+      <FLOAT name="fDown">10.0</FLOAT>
+    </STRUCT>
+  </DBENTRY>
+
+  <DBENTRY name="MISSILE_LOADING_TRV_POS">
+      <FLOAT>0.0</FLOAT>
+  </DBENTRY>
+
+  <DBENTRY name="MISSILE_MIN_RANGE_METER">
+    <INT>400</INT>
+  </DBENTRY>
+
+  <DBENTRY name="MISSILE_MAX_RANGE_METER">
+    <INT>4000</INT>
+  </DBENTRY> 
+  
+</DATABASE>

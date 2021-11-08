@@ -1,0 +1,284 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="2">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1DBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="FrameWork2">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Table2DBEnum" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="" msdata:Prefix="FrameWork2">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic" msdata:FileName="" msdata:LibraryName="" msdata:Reference_Table="" msdata:TableId="0" msdata:TablePath="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                <xs:element name="min_value" type="xs:string" minOccurs="0" />
+                <xs:element name="max_value" type="xs:string" minOccurs="0" />
+                <xs:element name="defaultvalue" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="MonitorSample_x003A__x003A_CommunicationEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachine_x003A__x003A_StateMachineStatusEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachine_x003A__x003A_TimeoutStatusEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachineLogic_x003A__x003A_STATE_FIRST">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Transition" type="xs:int" minOccurs="0" />
+                <xs:element name="Transition_Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Go_To_State" type="xs:int" minOccurs="0" />
+                <xs:element name="State_Enumeration" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachineLogic_x003A__x003A_STATE_SECOND">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Transition" type="xs:int" minOccurs="0" />
+                <xs:element name="Transition_Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Go_To_State" type="xs:int" minOccurs="0" />
+                <xs:element name="State_Enumeration" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="StateMachineLogic_x003A__x003A_STATE_THIRD">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Transition" type="xs:int" minOccurs="0" />
+                <xs:element name="Transition_Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Go_To_State" type="xs:int" minOccurs="0" />
+                <xs:element name="State_Enumeration" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table1DBEnum>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>VALUE</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </Table1DBEnum>
+  <Table1DBEnum>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>STATUS</Field_Name>
+    <Enumeration>MonitorSample::CommunicationEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </Table1DBEnum>
+  <Table1DBEnum>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>STATE_MACHINE_STS</Field_Name>
+    <Type>StateMachineLogic.h::StateMachineEntryStruct_StateMachineLogic</Type>
+    <Size>0</Size>
+  </Table1DBEnum>
+  <Table2DBEnum>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>VALUE2</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </Table2DBEnum>
+  <Table2DBEnum>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>STATUS2</Field_Name>
+    <Enumeration>MonitorSample::CommunicationEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </Table2DBEnum>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>nIsValid</Field_Name>
+    <Enumeration>StateMachine::StateMachineStatusEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>nProcessIndex</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>nLastOpcode</Field_Name>
+    <Enumeration>StateMachineLogic::StateMachineLogic_TransitionsEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>:StateMachineLogic_TransitionsEnum    nLastOpcode;</Comment>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>nLastTransition</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>nCurrentState</Field_Name>
+    <Enumeration>StateMachineLogic::StateMachineLogic_StateEnum</Enumeration>
+    <Type>int</Type>
+    <Comment>:StateMachineLogic_StateEnum             nCurrentState;</Comment>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+    <Field_x0020_Id>5</Field_x0020_Id>
+    <Field_Name>nIsTimeout</Field_Name>
+    <Enumeration>StateMachine::TimeoutStatusEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </statemachinelogic.h_x003A__x003A_StateMachineEntryStruct_StateMachineLogic>
+  <MonitorSample_x003A__x003A_CommunicationEnum>
+    <Field>RUNNING</Field>
+    <Value>1</Value>
+  </MonitorSample_x003A__x003A_CommunicationEnum>
+  <MonitorSample_x003A__x003A_CommunicationEnum>
+    <Field>PAUSED</Field>
+    <Value>2</Value>
+  </MonitorSample_x003A__x003A_CommunicationEnum>
+  <StateMachine_x003A__x003A_StateMachineStatusEnum>
+    <Field>STATE_MACHINE_NOT_VALID</Field>
+    <Value>0</Value>
+  </StateMachine_x003A__x003A_StateMachineStatusEnum>
+  <StateMachine_x003A__x003A_StateMachineStatusEnum>
+    <Field>STATE_MACHINE_VALID</Field>
+    <Value>1</Value>
+  </StateMachine_x003A__x003A_StateMachineStatusEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+    <Field>NO_TRANSITION</Field>
+    <Value>-1</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+    <Field>GO_TO_FIRST</Field>
+    <Value>0</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+    <Field>GO_TO_SECOND</Field>
+    <Value>1</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+    <Field>GO_TO_THIRD</Field>
+    <Value>2</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_TransitionsEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+    <Field>NO_STATE</Field>
+    <Value>-1</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+    <Field>STATE_FIRST</Field>
+    <Value>0</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+    <Field>STATE_SECOND</Field>
+    <Value>1</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+    <Field>STATE_THIRD</Field>
+    <Value>2</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+  <StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+    <Field>NUM_OF_EXAMPLE_STATES</Field>
+    <Value>3</Value>
+  </StateMachineLogic_x003A__x003A_StateMachineLogic_StateEnum>
+  <StateMachine_x003A__x003A_TimeoutStatusEnum>
+    <Field>TIMEOUT_NOT_EXPIRED</Field>
+    <Value>0</Value>
+  </StateMachine_x003A__x003A_TimeoutStatusEnum>
+  <StateMachine_x003A__x003A_TimeoutStatusEnum>
+    <Field>TIMEOUT_EXPIRED</Field>
+    <Value>1</Value>
+  </StateMachine_x003A__x003A_TimeoutStatusEnum>
+  <StateMachineLogic_x003A__x003A_STATE_FIRST>
+    <Transition>1</Transition>
+    <Transition_Enumeration>GO_TO_SECOND</Transition_Enumeration>
+    <Go_To_State>1</Go_To_State>
+    <State_Enumeration>StateMachineLogic::STATE_SECOND</State_Enumeration>
+  </StateMachineLogic_x003A__x003A_STATE_FIRST>
+  <StateMachineLogic_x003A__x003A_STATE_SECOND>
+    <Transition>2</Transition>
+    <Transition_Enumeration>GO_TO_THIRD</Transition_Enumeration>
+    <Go_To_State>2</Go_To_State>
+    <State_Enumeration>StateMachineLogic::STATE_THIRD</State_Enumeration>
+  </StateMachineLogic_x003A__x003A_STATE_SECOND>
+  <StateMachineLogic_x003A__x003A_STATE_THIRD>
+    <Transition>0</Transition>
+    <Transition_Enumeration>GO_TO_FIRST</Transition_Enumeration>
+    <Go_To_State>0</Go_To_State>
+    <State_Enumeration>StateMachineLogic::STATE_FIRST</State_Enumeration>
+  </StateMachineLogic_x003A__x003A_STATE_THIRD>
+</NewDataSet>

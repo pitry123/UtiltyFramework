@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="DOS-862" standalone="no"?>
+<DATABASE name="AmmunitionListDBEnum" project="WeaponStation">
+  <DBENTRY name="AMMUNITION_0" index="0">
+    <STRUCT>
+      <STRING size="256">NEMMO_30MM_AP.xml</STRING>
+      <INT>172180</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_1" index="1">
+    <STRUCT>
+      <STRING size="256">SBS_30MM_TP.xml</STRING>
+      <INT>18073</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_2" index="2">
+    <STRUCT>
+      <STRING size="256">ORLK_30MM_HE.xml</STRING>
+      <INT>139225</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_3" index="3">
+    <STRUCT>
+      <STRING size="256">ORLK_7_62MM_MG.xml</STRING>
+      <INT>9053</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_4" index="4">
+    <STRUCT>
+      <STRING size="256">ATK_30MM_ABM.xml</STRING>
+      <INT>27232</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_5" index="5">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_6" index="6">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_7" index="7">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_8" index="8">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_9" index="9">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_10" index="10">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_11" index="11">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_12" index="12">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_13" index="13">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_14" index="14">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_15" index="15">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_16" index="16">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_17" index="17">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_18" index="18">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_19" index="19">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_20" index="20">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_21" index="21">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_22" index="22">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_23" index="23">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+  <DBENTRY name="AMMUNITION_24" index="24">
+    <STRUCT>
+      <STRING size="256"></STRING>
+      <INT>0</INT>
+    </STRUCT>
+  </DBENTRY>
+</DATABASE>

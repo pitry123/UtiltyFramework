@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<debugEnv index="0" type="STRUCT">
+		<remoteAddress index="0" type="STRING" size="16">127.0.0.1</remoteAddress>
+		<remotePort index="1" type="UINT16_T" >23102</remotePort>
+		<localAddress index="2" type="STRING" size="16">127.0.0.1</localAddress>
+		<localPort index="3" type="UINT16_T" >23103</localPort>
+	</debugEnv>
+  <LogData index="1" type="STRUCT">
+    <LogName index="0" type="STRING" size="256">Monitor Logger</LogName>
+    <LogSevirty index="1" type="STRING" size="16">TRACE</LogSevirty>
+  </LogData>
+  <LogData index="2" type="STRUCT">
+    <LogName index="0" type="STRING" size="256">ApplicationBuilder</LogName>
+    <LogSevirty index="1" type="STRING" size="16">TRACE</LogSevirty>
+  </LogData>
+  <LogData index="3" type="STRUCT">
+    <LogName index="0" type="STRING" size="256"></LogName>
+    <LogSevirty index="1" type="STRING" size="16">ERROR</LogSevirty>
+  </LogData>
+ </root>

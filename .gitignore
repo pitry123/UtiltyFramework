@@ -1,6 +1,3 @@
-# Prerequisites
-*.d
-
 # Compiled Object files
 *.slo
 *.lo
@@ -30,3 +27,31 @@
 *.exe
 *.out
 *.app
+
+# Plugins
+Plugins/*
+!Plugins/CMakeLists.txt
+
+# Enterprise Architect
+*.ldb
+
+# Visual Studio folders
+/.vs
+/VSProject
+/out
+.vscode
+*.vspx
+
+#Cmake
+CMakeCache.txt
+CMakeLists.txt.user
+/CMakeFiles
+/build
+#conan
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conaninfo.txt
+/vscode/build/CMakeFiles
+/vscode/build
+/Samples/ApplicationSample/DE/workspace.dex
+/linux_build

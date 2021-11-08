@@ -1,0 +1,426 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="2">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ControllerStatusTable" msdata:Reference_Table="ComplexInputDeviceStatusDBEnum" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="DirectInputSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ControllerCommandsTable" msdata:Reference_Table="ComplexInputDeviceCommandsDBEnum" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="DirectInputSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceVibration" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ComplexInputDeviceConnectionStatus">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ControllerStatusTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>COMPLEX_INPUT_DEVICE_INFO</Field_Name>
+    <Type>ComplexInputDeviceDefs::ComplexInputDeviceInfo</Type>
+    <Size>0</Size>
+  </ControllerStatusTable>
+  <ControllerCommandsTable>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>COMPLEX_INPUT_DEVICE_VIBRATION</Field_Name>
+    <Type>ComplexInputDeviceDefs::ComplexInputDeviceVibration</Type>
+    <Size>0</Size>
+  </ControllerCommandsTable>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>xAxisPosition</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>yAxisPosition</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>zAxisPosition</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>xAxisRotation</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>yAxisRotation</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>5</Field_x0020_Id>
+    <Field_Name>zAxisRotation</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>6</Field_x0020_Id>
+    <Field_Name>extraAxesPositions_0</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>7</Field_x0020_Id>
+    <Field_Name>extraAxesPositions_1</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>8</Field_x0020_Id>
+    <Field_Name>pointOfViewDirections_0</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>9</Field_x0020_Id>
+    <Field_Name>pointOfViewDirections_1</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>10</Field_x0020_Id>
+    <Field_Name>pointOfViewDirections_2</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>11</Field_x0020_Id>
+    <Field_Name>pointOfViewDirections_3</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>12</Field_x0020_Id>
+    <Field_Name>buttons_0</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>13</Field_x0020_Id>
+    <Field_Name>buttons_1</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>14</Field_x0020_Id>
+    <Field_Name>buttons_2</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>15</Field_x0020_Id>
+    <Field_Name>buttons_3</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>16</Field_x0020_Id>
+    <Field_Name>buttons_4</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>17</Field_x0020_Id>
+    <Field_Name>buttons_5</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>18</Field_x0020_Id>
+    <Field_Name>buttons_6</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>19</Field_x0020_Id>
+    <Field_Name>buttons_7</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>20</Field_x0020_Id>
+    <Field_Name>buttons_8</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>21</Field_x0020_Id>
+    <Field_Name>buttons_9</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>22</Field_x0020_Id>
+    <Field_Name>buttons_10</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>23</Field_x0020_Id>
+    <Field_Name>buttons_11</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>24</Field_x0020_Id>
+    <Field_Name>buttons_12</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>25</Field_x0020_Id>
+    <Field_Name>buttons_13</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>26</Field_x0020_Id>
+    <Field_Name>buttons_14</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>27</Field_x0020_Id>
+    <Field_Name>buttons_15</Field_Name>
+    <Type>uint8_t</Type>
+    <Size>1</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>28</Field_x0020_Id>
+    <Field_Name>xAxisVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>29</Field_x0020_Id>
+    <Field_Name>yAxisVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>30</Field_x0020_Id>
+    <Field_Name>zAxisVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>31</Field_x0020_Id>
+    <Field_Name>xAxisAngularVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>32</Field_x0020_Id>
+    <Field_Name>yAxisAngularVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>33</Field_x0020_Id>
+    <Field_Name>zAxisAngularVelocity</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>34</Field_x0020_Id>
+    <Field_Name>extraAxesVelocities_0</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>35</Field_x0020_Id>
+    <Field_Name>extraAxesVelocities_1</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>36</Field_x0020_Id>
+    <Field_Name>xAxisAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>37</Field_x0020_Id>
+    <Field_Name>yAxisAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>38</Field_x0020_Id>
+    <Field_Name>zAxisAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>39</Field_x0020_Id>
+    <Field_Name>xAxisAngularAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>40</Field_x0020_Id>
+    <Field_Name>yAxisAngularAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>41</Field_x0020_Id>
+    <Field_Name>zAxisAngularAcceleration</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>42</Field_x0020_Id>
+    <Field_Name>extraAxesAcceleration_0</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>43</Field_x0020_Id>
+    <Field_Name>extraAxesAcceleration_1</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>44</Field_x0020_Id>
+    <Field_Name>xAxisForce</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>45</Field_x0020_Id>
+    <Field_Name>yAxisForce</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>46</Field_x0020_Id>
+    <Field_Name>zAxisForce</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>47</Field_x0020_Id>
+    <Field_Name>xAxisTorque</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>48</Field_x0020_Id>
+    <Field_Name>yAxisTorque</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>49</Field_x0020_Id>
+    <Field_Name>zAxisTorque</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>50</Field_x0020_Id>
+    <Field_Name>extraAxesForces_0</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>51</Field_x0020_Id>
+    <Field_Name>extraAxesForces_1</Field_Name>
+    <Type>int16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+    <Field_x0020_Id>52</Field_x0020_Id>
+    <Field_Name>connectionStatus</Field_Name>
+    <Enumeration>ComplexInputDeviceConnectionStatus</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceInfo>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceVibration>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>leftMotor</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceVibration>
+  <ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceVibration>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>rightMotor</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </ComplexInputDeviceDefs_x003A__x003A_ComplexInputDeviceVibration>
+  <ComplexInputDeviceConnectionStatus>
+    <Field>COMPLEX_INPUT_DEVICE_CONNECTED</Field>
+    <Value>0</Value>
+  </ComplexInputDeviceConnectionStatus>
+  <ComplexInputDeviceConnectionStatus>
+    <Field>COMPLEX_INPUT_DEVICE_DISCONNECTED</Field>
+    <Value>1</Value>
+  </ComplexInputDeviceConnectionStatus>
+</NewDataSet>

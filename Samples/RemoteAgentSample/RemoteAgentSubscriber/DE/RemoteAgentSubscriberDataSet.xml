@@ -1,0 +1,368 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:DATA_BASE_COUNTER="4">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="GreenRedTable1" msdata:Reference_Table="GreenRedTable" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="ApplicationSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="GreenRedTable2" msdata:Reference_Table="GreenRedTable" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="ApplicationSample">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RemoteAgentStatusDBEnum" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="RemoteAgent">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="XML_StoreDBEnum" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="" msdata:Prefix="ParamStore">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_MyData" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_CHARBUFFER" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CommonTypes_x003A__x003A_MonitorParams" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_MyInternalData" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ApplicationSampleDB_x003A__x003A_MyArrayStruct" msdata:Reference_Table="" msdata:TableId="0" msdata:LibraryName="" msdata:TablePath="" msdata:FileName="">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field_x0020_Id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+                <xs:element name="Field_Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Enumeration" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                <xs:element name="Size" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="MyEnum">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Field" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <GreenRedTable1>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ROW_1</Field_Name>
+    <Type>ApplicationSampleDB::MyData</Type>
+    <Comment>Row 1 of the tester</Comment>
+    <Size>0</Size>
+  </GreenRedTable1>
+  <GreenRedTable1>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>ROW_2</Field_Name>
+    <Type>int</Type>
+    <Comment>Row 2 of the tester</Comment>
+    <Size>4</Size>
+  </GreenRedTable1>
+  <GreenRedTable2>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>ROW_1</Field_Name>
+    <Type>ApplicationSampleDB::MyData</Type>
+    <Comment>Row 1 of the tester</Comment>
+    <Size>0</Size>
+  </GreenRedTable2>
+  <GreenRedTable2>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>ROW_2</Field_Name>
+    <Type>int</Type>
+    <Comment>Row 2 of the tester</Comment>
+    <Size>4</Size>
+  </GreenRedTable2>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>REMOTE_CHANNEL_COMM_STATUS</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </RemoteAgentStatusDBEnum>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>DATA_SYNCED_STS</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </RemoteAgentStatusDBEnum>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>REMOTE_CHANNEL_ENABLE_STS</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </RemoteAgentStatusDBEnum>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>IMPORTED_DB_COUPLES_STS</Field_Name>
+    <Type>CommonTypes::CHARBUFFER</Type>
+    <Size>0</Size>
+  </RemoteAgentStatusDBEnum>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>EXPORTED_DB_COUPLES_STS</Field_Name>
+    <Type>CommonTypes::CHARBUFFER</Type>
+    <Size>0</Size>
+  </RemoteAgentStatusDBEnum>
+  <RemoteAgentStatusDBEnum>
+    <Field_x0020_Id>5</Field_x0020_Id>
+    <Field_Name>NOT_SYNCTED_DB_STS</Field_Name>
+    <Type>CommonTypes::CHARBUFFER</Type>
+    <Size>0</Size>
+  </RemoteAgentStatusDBEnum>
+  <XML_StoreDBEnum>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>DEBUG_EN_MEM</Field_Name>
+    <Type>CommonTypes::MonitorParams</Type>
+    <Size>0</Size>
+  </XML_StoreDBEnum>
+  <XML_StoreDBEnum>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>REMOTE_AGENT_DEBUG_ENV</Field_Name>
+    <Type>CommonTypes::MonitorParams</Type>
+    <Size>0</Size>
+  </XML_StoreDBEnum>
+  <ApplicationSampleDB_x003A__x003A_MyData>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>val1</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ApplicationSampleDB_x003A__x003A_MyData>
+  <ApplicationSampleDB_x003A__x003A_MyData>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>val2</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ApplicationSampleDB_x003A__x003A_MyData>
+  <ApplicationSampleDB_x003A__x003A_MyData>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>val3</Field_Name>
+    <Type>float</Type>
+    <Size>4</Size>
+  </ApplicationSampleDB_x003A__x003A_MyData>
+  <ApplicationSampleDB_x003A__x003A_MyData>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>val4</Field_Name>
+    <Type>double</Type>
+    <Size>8</Size>
+  </ApplicationSampleDB_x003A__x003A_MyData>
+  <ApplicationSampleDB_x003A__x003A_MyData>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>structData</Field_Name>
+    <Type>ApplicationSampleDB::MyInternalData</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyData>
+  <CommonTypes_x003A__x003A_CHARBUFFER>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>buffer</Field_Name>
+    <Type>char</Type>
+    <Size>256</Size>
+  </CommonTypes_x003A__x003A_CHARBUFFER>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>remoteAddress</Field_Name>
+    <Type>char</Type>
+    <Size>16</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>remotePort</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>localAddress</Field_Name>
+    <Type>char</Type>
+    <Size>16</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <CommonTypes_x003A__x003A_MonitorParams>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>localPort</Field_Name>
+    <Type>uint16_t</Type>
+    <Size>2</Size>
+  </CommonTypes_x003A__x003A_MonitorParams>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>val1</Field_Name>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>1</Field_x0020_Id>
+    <Field_Name>MyArray_0</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>2</Field_x0020_Id>
+    <Field_Name>MyArray_1</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>3</Field_x0020_Id>
+    <Field_Name>MyArray_2</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>4</Field_x0020_Id>
+    <Field_Name>MyArray_3</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>5</Field_x0020_Id>
+    <Field_Name>MyArray_4</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>6</Field_x0020_Id>
+    <Field_Name>MyArray_5</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>7</Field_x0020_Id>
+    <Field_Name>MyArray_6</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>8</Field_x0020_Id>
+    <Field_Name>MyArray_7</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>9</Field_x0020_Id>
+    <Field_Name>MyArray_8</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>10</Field_x0020_Id>
+    <Field_Name>MyArray_9</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyInternalData>
+    <Field_x0020_Id>11</Field_x0020_Id>
+    <Field_Name>oneMoreStruct</Field_Name>
+    <Type>ApplicationSampleDB::MyArrayStruct</Type>
+    <Size>0</Size>
+  </ApplicationSampleDB_x003A__x003A_MyInternalData>
+  <ApplicationSampleDB_x003A__x003A_MyArrayStruct>
+    <Field_x0020_Id>0</Field_x0020_Id>
+    <Field_Name>options</Field_Name>
+    <Enumeration>MyEnum</Enumeration>
+    <Type>int</Type>
+    <Size>4</Size>
+  </ApplicationSampleDB_x003A__x003A_MyArrayStruct>
+  <MyEnum>
+    <Field>OPTION1</Field>
+    <Value>0</Value>
+  </MyEnum>
+  <MyEnum>
+    <Field>OPTION2</Field>
+    <Value>1</Value>
+  </MyEnum>
+</NewDataSet>

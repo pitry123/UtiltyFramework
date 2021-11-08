@@ -1,0 +1,8 @@
+<Configuration>
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+  </Dashboard>
+</Configuration>

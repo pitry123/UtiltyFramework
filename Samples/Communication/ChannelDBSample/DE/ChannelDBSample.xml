@@ -1,0 +1,32 @@
+<Configuration>
+  <Project.Name>ChannelDBSample</Project.Name>
+  <Project.Folder>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Communication\ChannelDBSample\DE</Project.Folder>
+  <Project.Logger>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Communication\ChannelDBSample\DE\LoggerSettings.xml</Project.Logger>
+  <Project.Common>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Communication\ChannelDBSample\Tables.h</Project.Common>
+  <Project.GenericCommon>J:\LandSystems\Framework_2.0\Infrastructure\common\common.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>J:\LandSystems\Framework_2.0\Infrastructure\Samples\Communication\ChannelDBSample</Folder.0>
+    <Folder.1>J:\LandSystems\Framework_2.0\Infrastructure\ModernAPI</Folder.1>
+    <Folder.2>J:\LandSystems\Framework_2.0\Infrastructure\Include</Folder.2>
+    <Folder.3>J:\LandSystems\Framework_2.0\Infrastructure\common</Folder.3>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>8765</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>5678</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>False</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>

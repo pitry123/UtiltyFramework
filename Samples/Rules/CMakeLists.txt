@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(Rules)
+set(RULES_APP_ROOT ${CMAKE_CURRENT_LIST_DIR})
+include_directories(${RULES_APP_ROOT})
+include_directories(${RULES_APP_ROOT}/Common)
+add_subdirectory(RulesSample)
+add_subdirectory(RulesSampleDynamic)

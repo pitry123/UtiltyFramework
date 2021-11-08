@@ -1,0 +1,53 @@
+name: Infrastructure-BUILD ($(Build.SourceBranchName))
+pool:
+  name: Yoqneam
+
+variables:
+  job: 'Landc4i_Dev/LAND/Framework2.0/Infrastructure'
+
+# run pipeline when commit to development or master or tag any is pushed
+trigger:
+  branches:
+    include:
+    - master
+    - development
+  tags: 
+    include:  
+      - '*' 
+
+# run pipeline whenever a PR is raised
+pr:
+  branches:
+    include:
+    - master
+    - development
+  
+steps:
+- checkout: self
+  clean: false  
+- task: JenkinsQueueJob@2
+  condition: eq(variables['Build.Reason'], 'PullRequest')
+  displayName: 'CI Integrity Build'
+  inputs:
+    serverEndpoint: 'Jenkins-LandC4I'
+    jobName: $(job)
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: true
+    jobParameters: |
+      PROJECT_BRANCH=$(Build.SourceBranchName)
+      DEPLOY=False
+      USE_GIT_REFSPEC=True
+
+- task: JenkinsQueueJob@2
+  condition: not(eq(variables['Build.Reason'], 'PullRequest'))
+  displayName: 'DEPLOY Build'
+  inputs:
+    serverEndpoint: 'Jenkins-LandC4I'
+    jobName: $(job)
+    captureConsole: true
+    capturePipeline: true
+    isParameterizedJob: true
+    jobParameters: |
+      PROJECT_BRANCH=$(Build.SourceBranchName)
+      DEPLOY=True

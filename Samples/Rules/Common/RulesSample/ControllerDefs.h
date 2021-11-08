@@ -1,0 +1,39 @@
+#ifndef _CONTROLLER_DEFS_H_
+#define  _CONTROLLER_DEFS_H_
+
+class ControllerDefs
+{
+public:
+
+	enum OperatorsEnum
+	{
+		OPERATOR_NONE = 0,
+		OPERATOR_1 = 1,
+		OPERATOR_2 = 2,
+		OPERATOR_3 = 3,
+		OPERATOR_4 = 4,
+		OPERATOR_5 = 5,
+		OPERATOR_6 = 6,
+	};
+
+	enum PermissionTypeEnum
+	{
+		PERMISSION_NONE			= -3,
+		PERMISSION_ALL			= -2,
+		PERMISSION_AUTHORITY	= -1,
+		PERMISSION_USER_ACTIVE	= 0,
+		PERMISSION_USER_1 ,
+		PERMISSION_USER_2 ,
+		PERMISSION_USER_3 ,
+		PERMISSION_USER_4 ,
+		PERMISSION_USER_5 ,
+		PERMISSION_USER_6 
+		
+	};
+
+};
+
+
+#endif // _CONTROLLER_DEFS_H_
+
+

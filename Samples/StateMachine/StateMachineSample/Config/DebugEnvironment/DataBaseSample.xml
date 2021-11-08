@@ -1,0 +1,30 @@
+<Configuration>
+  <Project.Name>DataBaseSample</Project.Name>
+  <Project.Folder>J:\LandSystems\Framework_2.0\Infrastructure\Samples\StateMachine\StateMachineSample\Config\DebugEnvironment</Project.Folder>
+  <Project.Logger>LoggerSettings.xml</Project.Logger>
+  <Project.Common>Tables.h</Project.Common>
+  <Project.GenericCommon>DEConfig.h</Project.GenericCommon>
+  <Project.ParseFolders>
+    <Folder.0>J:\LandSystems\Framework_2.0\Infrastructure\Samples\StateMachine\stateMachineSample</Folder.0>
+    <Folder.1>J:\LandSystems\Framework_2.0\Infrastructure\ModernAPI</Folder.1>
+  </Project.ParseFolders>
+  <TargetFilesPath>
+  </TargetFilesPath>
+  <VissualAssist>False</VissualAssist>
+  <Project.Communication>
+    <Protocol>UdpClient</Protocol>
+    <Listen.Port>4321</Listen.Port>
+    <Transmit.Ip>127.0.0.1</Transmit.Ip>
+    <Transmit.Port>1234</Transmit.Port>
+  </Project.Communication>
+  <State.Machines>True</State.Machines>
+  <Activities />
+  <DataMonitor>
+    <DataMonitorValuesReadOnly>False</DataMonitorValuesReadOnly>
+  </DataMonitor>
+  <Dashboard>
+    <DashboardAuto>False</DashboardAuto>
+    <DashboardEnableControlDragging>True</DashboardEnableControlDragging>
+    <DashboardEnableDraggingLabel>True</DashboardEnableDraggingLabel>
+  </Dashboard>
+</Configuration>
